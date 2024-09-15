@@ -1,0 +1,131 @@
+
+#Home{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+
+}
+
+
+.headerbar{
+    background-color: black;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    border: 2px solid red;
+    width: 57em;
+    margin-right: 3em;
+}
+
+.logo img{
+    max-width: 230px;
+    height: auto;
+}
+
+.NavigtionLink{
+    list-style: none;
+    display: flex;
+}
+
+.NavigtionLink li a{
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-right: 25px;
+}
+.Home-Page-Content{
+    border: 3px solid greenyellow;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 60px;
+}
+
+
+.MyImg{
+    border: 3px solid red;
+    width: 500px;
+    height: auto;
+    transform: rotate(-1deg);
+}
+
+
+.MyImg img{
+    width: 450px;
+    height: auto;
+}
+
+.nameposition{
+    border: 3px solid red;
+    width: 725px;
+
+    right: -43em;
+    margin-right: 10em;
+}
+
+#first{
+    font-size: 2rem;
+    color: whitesmoke;
+    transform: translate(-2em,-2.3em);
+}
+
+#sec{
+    margin: 0;
+    font-size: 6rem;
+    color: limegreen;
+    transform: translate(17px,-118px);
+}
+
+#thir{
+    margin: 0;
+    font-size: 3.6rem;
+    color: whitesmoke;
+    transform: translate(23px,-128px);
+}
+
+#four{
+    margin: 0;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transform: translate(2px,-125px);
+    text-align: center;
+    font-family:  "Poppins", sans-serif;
+    font-weight: normal;
+}
+
+.btn{
+    transform: translate(208px, -65px);
+    width: 358px;
+}
+
+.btn button{
+    border-radius: 25px;
+    width: 147px;
+    height: 37px;
+    font-weight: bold;
+    font-size:1.1rem ;
+}
+
+#cv_btn{
+    margin-right: 35px;
+    background: black;
+    color: lime;
+    border: 2px solid lime;
+    transition-timing-function:ease;
+    transition-property: background,border,transform;
+
+}
+
+#hire_btn{
+    background: orange;
+    color: white;
+    animation-iteration-count: infinite;
+
+}

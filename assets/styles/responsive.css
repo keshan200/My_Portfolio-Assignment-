@@ -1,0 +1,59 @@
+
+
+@media all and (max-width: 500px){
+
+nav{
+    display: none;
+}
+
+
+    .MyImg{
+        transform: translate(-60px, 50px) rotate(-1deg);
+        width: 100px;
+
+    }
+
+    .MyImg img{
+        width: 350px;
+        height: auto;
+        transform: translate(-50px, -74px);
+    }
+
+
+    .nameposition{
+        width: 8em;
+        /*transform: translate(-517px, 507px);*/
+    }
+
+    #first{
+        font-size: 0.2rem;
+        color: whitesmoke;
+        /*transform: translate(-2em,-2.3em);*/
+    }
+
+    #sec{
+        margin: 0;
+        font-size: 0.2rem;
+        color: limegreen;
+       /* transform: translate(17px,-118px);*/
+    }
+
+    #thir{
+        margin: 0;
+        font-size: 0.3rem;
+        color: whitesmoke;
+      /*  transform: translate(23px,-128px);*/
+    }
+
+    #four{
+        margin: 0;
+        font-size: 0.2rem;
+        color: whitesmoke;
+       /* transform: translate(-390px,-125px);*/
+        text-align: center;
+        font-family:  "Poppins", sans-serif;
+        font-weight: normal;
+    }
+
+
+}
