@@ -1,5 +1,92 @@
 
 
+ @media all and (max-width:1024px){
+
+
+    #Home{
+        background-color: red;
+    }
+
+    nav{
+        margin: -8em;
+        width: 50em !important;
+        margin-right: 1em!important;
+    }
+
+    .NavigtionLink li a{
+        font-size: 1rem !important;
+
+    }
+
+    .MyImg{
+        width: 365px !important;
+    }
+
+    .MyImg img{
+        width: 396px !important;
+        height: auto;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+
+    .nameposition{
+        width: 616px!important;
+        margin-right: 1em !important;
+        margin-top: 45px;
+
+    }
+
+    .btn{
+       position: relative;
+        top: 56px;
+        right: 18px;
+        margin-top: -33px;
+    }
+
+    #sec{
+        font-size: 5rem !important;
+    }
+
+    #thir{
+        font-size: 2.6rem !important;
+        transform: translate(49px,-128px) !important;
+        width: 521px!important;
+    }
+
+    #four{
+        font-size: 1.2rem !important;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @media all and (max-width: 500px){
 
 nav{
@@ -22,38 +109,38 @@ nav{
 
     .nameposition{
         width: 8em;
-        /*transform: translate(-517px, 507px);*/
+        !*transform: translate(-517px, 507px);*!
     }
 
     #first{
         font-size: 0.2rem;
         color: whitesmoke;
-        /*transform: translate(-2em,-2.3em);*/
+        !*transform: translate(-2em,-2.3em);*!
     }
 
     #sec{
         margin: 0;
         font-size: 0.2rem;
         color: limegreen;
-       /* transform: translate(17px,-118px);*/
+       !* transform: translate(17px,-118px);*!
     }
 
     #thir{
         margin: 0;
         font-size: 0.3rem;
         color: whitesmoke;
-      /*  transform: translate(23px,-128px);*/
+      !*  transform: translate(23px,-128px);*!
     }
 
     #four{
         margin: 0;
         font-size: 0.2rem;
         color: whitesmoke;
-       /* transform: translate(-390px,-125px);*/
+       !* transform: translate(-390px,-125px);*!
         text-align: center;
         font-family:  "Poppins", sans-serif;
         font-weight: normal;
     }
 
 
-}
+}*/
