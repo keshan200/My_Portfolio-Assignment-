@@ -11,10 +11,12 @@
 .headerbar{
     background-color: black;
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    border-radius: 50px;
 }
 
 nav{
@@ -24,8 +26,9 @@ nav{
 }
 
 .logo img{
-    max-width: 230px;
+    max-width: 212px;
     height: auto;
+    border-radius: 50px;
 }
 
 .NavigtionLink{
@@ -56,17 +59,17 @@ nav{
     height: auto;
     transform: rotate(-1deg);
     margin-left: 2.3em;
-    margin-top:-0.6em
+    margin-top:1em
 }
 
 
 .MyImg img{
-    width: 515px;
+    width: 510px;
     height: auto;
 }
 
 .nameposition{
-   /* border: 3px solid red;*/
+
     width: 725px;
 
     right: -43em;
@@ -109,7 +112,7 @@ nav{
 }
 
 .btn{
-    transform: translate(208px, -65px);
+    transform: translate(209px, -65px);
     width: 358px;
 }
 

@@ -1,0 +1,22 @@
+.NavigtionLink>li>a:hover{
+    color: lime;
+
+
+}
+
+#cv_btn:hover{
+    background: lime;
+    color: black;
+    font-weight: bold;
+}
+
+#hire_btn:hover{
+    background: black;
+    color: orange;
+    border: 2px solid orange;
+}
+
+
+.Social_meadias>a>img:hover{
+    transform: scale(60%);
+}

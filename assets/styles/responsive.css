@@ -20,10 +20,12 @@
 
     .MyImg{
         width: 365px !important;
+        margin-top: 3em !important;
+        margin-left: -0.7em !important;
     }
 
     .MyImg img{
-        width: 396px !important;
+        width: 396px!important ;
         height: auto;
     }
 
@@ -31,18 +33,23 @@
         width: 200px;
     }
 
+    .Home-Page-Content{
+        margin-right: 1em !important;
+    }
+
     .nameposition{
         width: 616px!important;
-        margin-right: 1em !important;
+        margin-right: 0 !important;
         margin-top: 45px;
+
 
     }
 
     .btn{
        position: relative;
         top: 56px;
-        right: 18px;
-        margin-top: -33px;
+        right: 56px;
+        margin-top: -63px;
     }
 
     #sec{
@@ -50,9 +57,9 @@
     }
 
     #thir{
-        font-size: 2.6rem !important;
-        transform: translate(49px,-128px) !important;
-        width: 521px!important;
+        font-size: 2.7rem !important;
+        transform: translate(45px,-128px) !important;
+        width: 534px!important;
     }
 
     #four{
@@ -64,7 +71,120 @@
 
 
 
+ @media all and (max-width:768px){
 
+     .NavigtionLink li a{
+         display: none;
+     }
+
+      .MyImg img{
+          width: 333px !important;
+      }
+
+      #first{
+          font-size: 1.5em!important;
+          margin-top: 0;
+          transform: translate(-1em,-3.3em)!important;
+      }
+
+      #sec{
+          font-size: 4rem!important;
+          margin-top: 56px;
+      }
+
+      #thir{
+          font-size: 2.2em!important;
+          width: 436px!important;
+          margin-top: 0.2em;
+          margin-left: -0.2em!important;
+      }
+
+      #four{
+          font-size: 1em!important;
+          margin-left: 3em !important;
+          margin-top: -2em;!important;
+      }
+
+      .nameposition{
+          margin-left: -4em!important;
+          margin-top: 8em!important;
+
+      }
+
+      .btn button{
+          width: 132px!important;
+          height: 31px!important;
+      }
+
+
+      .btn{
+          width: 285px!important;
+
+          top: 31px;
+          right: 26px;
+      }
+
+      #hire_btn{
+          margin-top: 10px;!important
+      }
+ }
+
+
+
+@media all and (max-width: 425px){
+
+    .NavigtionLink li a{
+        display: none;
+    }
+
+    .MyImg img{
+        width: 293px!important;
+        margin-left: 59px!important;
+        margin-top: -29px!important;
+    }
+
+    .nameposition{
+        margin-left: -28em!important;
+        position: relative;
+        left: 16px;
+        top: 279px;
+
+    }
+
+
+    #first{
+        font-size: 1em!important;
+        transform: translate(-1em,-20.20em)!important;
+    }
+
+    #sec{
+        font-size: 2.5rem!important;
+        width: 295px!important;
+        transform: translate(140px,-118px)!important;
+    }
+
+    #thir {
+        font-size: 1.3em !important;
+        margin-top: -8px !important;
+        width: 263px !important;
+        transform: translate(160px, -110px) !important;
+    }
+
+        #four {
+            font-size: 0.8rem !important;
+            width: 207px !important;
+            position: relative;
+            left: 134px;
+        }
+
+        .btn {
+            width: 158px !important;
+            transform: translate(245px,-54px)!important;
+        }
+
+
+
+    }
 
 
 
