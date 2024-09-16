@@ -1,9 +1,10 @@
 
 #about-me{
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     background-color: black;
     position: relative;
+    top: 50px;
 }
 
 

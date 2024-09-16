@@ -71,6 +71,44 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+    /*about me page*/
+
+     .Social_meadias{
+         width: 500px!important;
+     }
+
+
+     .myimg{
+         width: 272px!important;
+         transform: translate(-40px,5px);
+     }
+
+
+     .details_sec{
+         transform: translate(7px,-34px)!important;
+     }
+
+
+     .Social_meadias{
+         transform: translate(35em, 4em)!important;
+         width: 522px!important;
+     }
+
+
+     .main{
+         width: 853px!important;
+     }
 }
 
 
@@ -137,6 +175,33 @@
       #hire_btn{
           margin-top: 10px;!important
       }
+
+
+
+     /*about me page*/
+
+     .myimg{
+         width: 213px !important;
+         transform: translate(144px,-32px);
+     }
+
+     .details_sec{
+         font-size: 0.9em!important;
+         transform: translate(-277px,257px)!important;
+     }
+
+     .Social_meadias{
+         transform: translate(16em,6em)scale(86%)!important;
+     }
+
+     #details{
+         width: 605px!important;
+     }
+
+     .main{
+         width: 500px!important;
+     }
+
  }
 
 
@@ -149,16 +214,17 @@
 
     .MyImg img{
         width: 293px!important;
-        margin-left: 59px!important;
+        margin-left: 55px!important;
         margin-top: -29px!important;
     }
 
     .nameposition{
         margin-left: -28em!important;
         position: relative;
+        width: 64px;
         left: 16px;
         top: 279px;
-
+        margin-right: 368px;
     }
 
 
@@ -170,21 +236,21 @@
     #sec{
         font-size: 2.5rem!important;
         width: 295px!important;
-        transform: translate(140px,-118px)!important;
+        transform: translate(144px,-118px)!important;
     }
 
     #thir {
         font-size: 1.3em !important;
         margin-top: -8px !important;
         width: 263px !important;
-        transform: translate(160px, -110px) !important;
+        transform: translate(166px, -110px) !important;
     }
 
         #four {
             font-size: 0.8rem !important;
             width: 207px !important;
             position: relative;
-            left: 134px;
+            left: 143px;
         }
 
         .btn {
@@ -193,6 +259,43 @@
         }
 
 
+
+
+        /*about me section*/
+
+    #about-me{
+        position: relative;
+        top: 83px !important;
+    }
+
+       .myimg{
+           width: 130px!important;
+           transform: translate(3px,-98px)!important;
+       }
+
+       .title p{
+           font-size:2.5em!important;
+       }
+
+       .Social_meadias{
+           transform: translate(3.5em,-2em)scale(60%)!important;
+       }
+
+       #details{
+           width: 281px!important;
+       }
+
+       .main{
+           width: 214px!important;
+       }
+
+       .details_sec{
+           transform: translate(-233px,202px)!important;
+       }
+
+       #about-me section{
+           width: 305px!important;
+       }
 
     }
 
