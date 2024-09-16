@@ -13,9 +13,11 @@
     width: 100vw;
     height: 12vh;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
 
+    z-index: 999!important;
     border-radius: 50px;
 }
 
@@ -49,7 +51,8 @@ nav{
     justify-content: space-between;
 
     margin-right: 2em;
-    margin-top: 2em;
+    position: relative;
+    top: 130px;
 }
 
 

@@ -34,15 +34,19 @@
     }
 
     .Home-Page-Content{
-        margin-right: 1em !important;
+        position: relative !important;
+        top: 78px; !important;
     }
 
     .nameposition{
         width: 616px!important;
         margin-right: 0 !important;
         margin-top: 45px;
+    }
 
 
+    .nameposition di{
+        margin-right: 24px!important;
     }
 
     .btn{
@@ -103,6 +107,12 @@
           font-size: 1em!important;
           margin-left: 3em !important;
           margin-top: -2em;!important;
+      }
+
+
+      .Home-Page-Content{
+          position: relative !important;
+          top: 68px !important;
       }
 
       .nameposition{
