@@ -1,0 +1,64 @@
+
+#education-journey{
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    position: relative;
+}
+
+#Education_title{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.education_sec{
+    border: 2px solid lime;
+    width: 50vw;
+    height: 50vh;
+    transform: translate(40em,-6em);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.e-card{
+   border: 2px solid red;
+    width: 491px;
+
+}
+
+.e-card div{
+    padding: 10px;
+    margin:20px auto;
+    background: springgreen;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 250px;
+
+
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orangered;
+    border-radius: 20px;
+    height: 100px;
+}
+
+
+
+::-webkit-scrollbar-track {
+    background: #333;
+}

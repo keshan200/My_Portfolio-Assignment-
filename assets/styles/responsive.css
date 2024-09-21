@@ -1,5 +1,4 @@
 
-
  @media all and (max-width:1024px){
 
 
@@ -74,42 +73,37 @@
 
 
 
-
-
-
-
-
-
-
-
     /*about me page*/
 
-     .Social_meadias{
-         width: 500px!important;
+     .Social_meadias {
+      /*   border: 1px solid red;*/
+         transform: translate(35em, 2em)!important;
+         width: 33em!important;
      }
 
 
+     .Social_meadias a img{
+         transform: scale(32%)!important;
+     }
+
      .myimg{
          width: 272px!important;
-         transform: translate(-40px,5px);
+         transform: translateX(33px)!important;
      }
 
 
      .details_sec{
-         transform: translate(7px,-34px)!important;
+         transform: translate(-33px,-34px)!important;
+         width: 600px !important;
+         font-size: 0.9em!important;
      }
 
 
-     .Social_meadias{
-         transform: translate(35em, 4em)!important;
-         width: 522px!important;
-     }
-
-
-     .main{
-         width: 853px!important;
-     }
 }
+
+
+
+
 
 
 
@@ -180,7 +174,7 @@
 
      /*about me page*/
 
-     .myimg{
+   /*  .myimg{
          width: 213px !important;
          transform: translate(144px,-32px);
      }
@@ -199,14 +193,52 @@
      }
 
      .main{
-         width: 500px!important;
+
+     }
+
+     #PhotoFrame{
+         text-align: center!important;
+     }*/
+
+     .main {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+     }
+
+     #PhotoFrame {
+         display: flex!important;
+         justify-content: center!important;
+         width: 100%;
+     }
+
+     .myimg {
+         margin: 0;
+         width: auto;
+         transform: translateX(0)!important;
+     }
+
+     .details_sec {
+         transform: translate(0, 0)!important; /* Reset any custom positioning */
+         text-align: center;
+         width: 90%; /* Adjust width as needed */
+         margin-top: 125px;
+     }
+
+     .Social_meadias {
+         transform: translate(247px, -9em) scale(100%)!important; /* Reset scaling and positioning */
+     }
+
+     #details {
+         width: 96%!important;
      }
 
  }
 
 
 
-@media all and (max-width: 425px){
+ @media all and (max-width:427px){
+
 
     .NavigtionLink li a{
         display: none;
@@ -218,15 +250,44 @@
         margin-top: -29px!important;
     }
 
+
+    .MyImg{
+        width: 276px !important;
+    }
+
+
+
+
+
     .nameposition{
-        margin-left: -28em!important;
+        /*margin-left: -28em!important;
         position: relative;
-        width: 64px;
+        width: 31em !important;
         left: 16px;
         top: 279px;
         margin-right: 368px;
+
+        border: 2px solid lime;
+*/
+        width: 425px!important;
+        display: flex ;
+        justify-content: center;
+        flex-direction: column;
+
+
+
     }
 
+
+     .Home-Page-Content {
+         /*text-align: center;*/
+         margin: 0!important;
+         border: 1px solid red;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+     }
 
     #first{
         font-size: 1em!important;
@@ -234,16 +295,16 @@
     }
 
     #sec{
-        font-size: 2.5rem!important;
-        width: 295px!important;
-        transform: translate(144px,-118px)!important;
+        font-size: 3rem !important;
+        width: 363px !important;
+       transform: translate(-31px, -25px) !important;
     }
 
     #thir {
-        font-size: 1.3em !important;
+        font-size: 1.8em !important;
         margin-top: -8px !important;
-        width: 263px !important;
-        transform: translate(166px, -110px) !important;
+        width: 352px !important;
+        transform: translate(-24px, -16px) !important;
     }
 
         #four {
@@ -251,11 +312,22 @@
             width: 207px !important;
             position: relative;
             left: 143px;
+            margin: 0 !important;
+            transform: translate(-109px, -21px)!important;
         }
 
         .btn {
             width: 158px !important;
-            transform: translate(245px,-54px)!important;
+          /*  transform: translate(-41px, 53px) !important;*/
+        }
+
+        .di{
+            border: 2px solid gold;
+            width: 425px!important;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
         }
 
 
@@ -263,14 +335,15 @@
 
         /*about me section*/
 
-    #about-me{
+       #about-me{
         position: relative;
         top: 83px !important;
     }
 
        .myimg{
-           width: 130px!important;
-           transform: translate(3px,-98px)!important;
+           width: 130px !important;
+           transform: translate(123px, -27px) !important;
+
        }
 
        .title p{
@@ -278,19 +351,23 @@
        }
 
        .Social_meadias{
-           transform: translate(3.5em,-2em)scale(60%)!important;
+           transform: translate(4.9em, 3em) scale(60%) !important;
        }
 
        #details{
            width: 281px!important;
        }
 
-       .main{
-           width: 214px!important;
-       }
+     .main {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+     }
+
+
 
        .details_sec{
-           transform: translate(-233px,202px)!important;
+           transform: translate(-111px, 286px) !important;
        }
 
        #about-me section{
@@ -319,61 +396,22 @@
 
 
 
-/*
-@media all and (max-width: 500px){
 
-nav{
-    display: none;
-}
+@media all and (max-width: 320px){
 
-
-    .MyImg{
-        transform: translate(-60px, 50px) rotate(-1deg);
-        width: 100px;
-
-    }
 
     .MyImg img{
-        width: 350px;
-        height: auto;
-        transform: translate(-50px, -74px);
+        margin-left: 39px !important;
     }
 
 
-    .nameposition{
-        width: 8em;
-        !*transform: translate(-517px, 507px);*!
+    .main{
+        margin-left: 80px!important;
     }
 
-    #first{
-        font-size: 0.2rem;
-        color: whitesmoke;
-        !*transform: translate(-2em,-2.3em);*!
-    }
-
-    #sec{
-        margin: 0;
-        font-size: 0.2rem;
-        color: limegreen;
-       !* transform: translate(17px,-118px);*!
-    }
-
-    #thir{
-        margin: 0;
-        font-size: 0.3rem;
-        color: whitesmoke;
-      !*  transform: translate(23px,-128px);*!
-    }
-
-    #four{
-        margin: 0;
-        font-size: 0.2rem;
-        color: whitesmoke;
-       !* transform: translate(-390px,-125px);*!
-        text-align: center;
-        font-family:  "Poppins", sans-serif;
-        font-weight: normal;
+    .Social_meadias{
+        transform: translate(2.5em,-2em)scale(60%)!important;
     }
 
 
-}*/
+}

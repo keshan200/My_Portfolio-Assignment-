@@ -22,7 +22,6 @@
 }
 
 nav{
-    /*border: 2px solid red;*/
     width: 58em ;
     margin-right: 1em ;
 }
@@ -46,11 +45,12 @@ nav{
     margin-right: 25px;
 }
 .Home-Page-Content{
-   /* border: 3px solid greenyellow;*/
+    border: 1px solid greenyellow;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
 
-    margin-right: 2em;
+  /*  margin-right: 2em;*/
     position: relative;
     top: 130px;
 }
@@ -71,14 +71,23 @@ nav{
     height: auto;
 }
 
+
+.di{
+    width: 52vw;
+    border: 1px solid gold;
+}
+
+
 .nameposition{
 
     width: 725px;
-
     right: -43em;
     margin-right: 5em;
-
     margin-top: 5em;
+
+
+    border: 1px solid deeppink;
+
 
 }
 

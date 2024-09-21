@@ -4,7 +4,7 @@
     width: 100vw;
     background-color: black;
     position: relative;
-    top: 50px;
+    top: -2px;
 }
 
 
@@ -21,37 +21,40 @@
 }
 
 .main{
-   /* border: 3px solid red;*/
+    border: 1px solid green;
     margin-top: 80px;
-    width: 1300px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
+
 }
+
+
+
 
 
 .myimg{
     border-radius: 100%;
-    border: 20px solid green;
+    border: 15px solid green;
+    box-shadow: 1px 7px 61px lime;
     width: 350px;
     height: auto;
+    transform: translateX(120px);
 }
 
 .details_sec{
 
-    background-color: gray;
+    background-color: #333333;
     border-radius: 30px;
-
-
 
     font-size: 1.1em;
     color: white;
     text-align: center;
     font-family: "Poppins", sans-serif;
     width: 759px;
-    transform: translate(-27px, -42px);
-   /* transform: translate(379px, -303px);*/
+    transform: translate(-86px, -42px);
+
 }
 
 #details{
@@ -60,15 +63,37 @@
 }
 
 .Social_meadias{
-    /*transform: translate(-885px, -483px);*/
-    transform: translate(45em, -7em);
-    width: 35em;
+    width: 37vw;
+    transform: translate(50em, -7em);
+    border: 1px solid red;
 }
 
 .Social_meadias>a>img{
 
-    transform: scale(40%);
+    transform: scale(40%) ;
     margin-right: 1px;
     transition-duration: 0.5s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
