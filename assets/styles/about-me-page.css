@@ -7,7 +7,7 @@
 
 
 .title{
-    border: 2px solid red;
+  /*  border: 2px solid red;*/
     text-align: center;
 }
 
@@ -19,14 +19,14 @@
 }
 
 .main{
-    border: 1px solid gold;
+  /*  border: 1px solid gold;*/
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .im{
-    border: 2px solid blue;
+   /* border: 2px solid blue;*/
     width: 40vw;
     text-align: center;
 }
@@ -43,7 +43,7 @@
 
 
 .details_sec{
-    border: 2px solid blue;
+   /* border: 2px solid blue;*/
     width: 60vw;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
 }
 
 .Social_meadias{
-    border: 1px solid lime;
+   /* border: 1px solid lime;*/
     width: 60vw;
     display: flex;
     justify-content: center;

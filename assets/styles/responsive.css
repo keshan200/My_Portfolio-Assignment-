@@ -5,6 +5,7 @@
          margin: -8em;
          width: 50em !important;
          margin-right: 1em !important;
+
      }
 
      .NavigtionLink li a {
@@ -30,12 +31,11 @@
      .Home-Page-Content{
          position: relative;
          top: 100px;
-
          padding-right: 21px;
      }
+
      .nameposition{
          padding-right: 8px!important;
-         width: 64vw!important;
      }
 
 
@@ -44,21 +44,21 @@
      }
 
      #sec{
-         font-size: 5em;
+         font-size: 5em!important;
      }
 
      #thir{
-         font-size: 3em;
+         font-size: 3em!important;
      }
 
 
-     /*about me page*/
+ /*about me page*/
      #details{
          font-size: 0.9rem!important;
      }
 
      .myimg{
-         width: 304px;
+         width: 304px!important;
      }
      .Social_meadias{
          width: 45vw!important;
@@ -96,9 +96,8 @@
 
      .nameposition {
          padding: 0!important;
-         border: 1px solid yellow;
          padding-top: 37px!important;
-         width: 99vw!important;
+
          position: relative;
          left: -29px;
 
@@ -134,9 +133,8 @@
      }
 
      #cv_btn{
-         margin: 0;
+         margin: 0!important;
      }
-
 
 
      /*about me page*/
@@ -174,36 +172,37 @@
 
 
      #Home{
-         height: 143vh;
+         height: 151vh!important;
      }
 
 
      .Home-Page-Content{
-         display: flex;
+         display: flex!important;
          justify-content: center;
-         flex-direction: column;
+         flex-direction: column!important;
      }
 
      .nameposition {
          padding-right: 0!important;
          text-align: center;
          position: relative;
-         width:99vw!important;
+         left: 0;
+         width: 100vw!important;
 
      }
 
 
      .MyImg {
          border: 2px solid orange ;
-         transform: translateX(12px);
+         transform: translateX(14px);
          display: flex;
-         justify-content: center;
+         justify-content: center!important;
          width: 99vw !important;
      }
 
 
      #first{
-         transform: translate(-5em, -17em);
+         transform: translate(-5em, -17em)!important;
      }
 
      #sec {
@@ -215,23 +214,36 @@
      }
 
      #four{
-
          text-align: center;
      }
 
+     #cv_btn{
+         margin: 0!important;
+     }
 
      /*about me page*/
+
+
+
+
+
      .Social_meadias>a>img {
          transform: scale(35%)!important;
          margin-right: -29px!important;
      }
 
      .Social_meadias{
-         transform:translate(236px, -20em)!important;
+         transform:translate(231px, -20em)!important;
      }
 
      .details_sec{
          width: 79vw!important;
+     }
+
+     #about-me{
+         position: relative;
+         top: 50px;
+         height: 198vw!important;
      }
 
     }
@@ -242,6 +254,10 @@
          transform: translate(218px, -22em) !important;
 
      }
+
+      #about-me{
+          height: 226vw!important;
+      }
  }
 
 
@@ -280,6 +296,7 @@
       #about-me{
           position: relative;
           top: 50px;
+          height: 300vw!important;
       }
 
 
