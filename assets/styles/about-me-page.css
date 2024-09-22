@@ -3,6 +3,8 @@
     height: 130vh;
     width: 100vw;
     background-color: black;
+    position: relative;
+    top: 41px;;
 }
 
 
