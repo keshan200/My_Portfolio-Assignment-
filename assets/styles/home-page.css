@@ -1,17 +1,15 @@
 
 #Home{
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     background-color: black;
-    position: relative;
 
 }
-
 
 .headerbar{
     background-color: black;
     width: 100vw;
-    height: 12vh;
+    max-height: 12vh;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -44,21 +42,24 @@ nav{
     color: white;
     margin-right: 25px;
 }
+
+
+
+
 .Home-Page-Content{
-    border: 1px solid greenyellow;
-    width: 100vw;
+    border: 1px solid lime;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
-  /*  margin-right: 2em;*/
     position: relative;
-    top: 130px;
+    top: 150px;
+
 }
 
-
 .MyImg{
-   /* border: 3px solid red;*/
-    width: 500px;
+
+    width: 100vw;
     height: auto;
     transform: rotate(-1deg);
     margin-left: 2.3em;
@@ -72,61 +73,58 @@ nav{
 }
 
 
-.di{
-    width: 52vw;
-    border: 1px solid gold;
-}
-
-
 .nameposition{
-
-    width: 725px;
-    right: -43em;
-    margin-right: 5em;
-    margin-top: 5em;
-
-
-    border: 1px solid deeppink;
-
-
+    border: 1px solid yellow;
+    padding-top: 83px;
+    padding-right: 116px;
+    width: 128vw;
 }
+
+
+
+.di{
+    border: 2px solid red;
+}
+
 
 #first{
     font-size: 2rem;
     color: whitesmoke;
-    transform: translate(-2em,-2.3em);
+    margin: 0;
+    transform: translate(-4em, -1em);
 }
 
 #sec{
-    margin: 0;
     font-size: 6rem;
     color: limegreen;
-    transform: translate(17px,-118px);
+    margin: 0;
 }
+
 
 #thir{
-    margin: 0;
     font-size: 3.6rem;
     color: whitesmoke;
-    width: 714px;
-    transform: translate(23px,-128px);
+    margin: 0;
 }
+
 
 #four{
-    margin: 0;
     font-size: 1.5rem;
-    color: whitesmoke;
-    transform: translate(2px,-125px);
     text-align: center;
+    margin: 0;
+    margin-top: 23px;
+    color: whitesmoke;
     font-family:  "Poppins", sans-serif;
     font-weight: normal;
-    margin-top: 1em;
 }
 
+
 .btn{
-    transform: translate(209px, -65px);
-    width: 358px;
+    border: 2px solid blue;
+    text-align: center;
+    margin-top: 30px;
 }
+
 
 .btn button{
     border-radius: 25px;
@@ -150,5 +148,173 @@ nav{
     background: orange;
     color: white;
     animation-iteration-count: infinite;
+
+}
+
+
+@media all and (max-width:1024px) {
+
+    nav {
+        margin: -8em;
+        width: 50em !important;
+        margin-right: 1em !important;
+    }
+
+    .NavigtionLink li a {
+        font-size: 1rem !important;
+
+    }
+
+    .MyImg {
+        width: 365px !important;
+        margin-top: 3em !important;
+        margin-left: -0.7em !important;
+    }
+
+    .MyImg img {
+        width: 396px !important;
+        height: auto;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .Home-Page-Content{
+        position: relative;
+        top: 100px;
+        padding-right: 21px;
+    }
+   .nameposition{
+       padding-right: 8px!important;
+   }
+
+
+   .di{
+       text-align: center;
+   }
+
+   #sec{
+       font-size: 5em;
+   }
+
+   #thir{
+       font-size: 3em;
+   }
+}
+
+
+  @media all and (max-width:768px){
+
+    .NavigtionLink li a{
+        display: none;
+    }
+
+      .MyImg img{
+          width: 333px !important;
+      }
+
+
+      .Home-Page-Content{
+          padding: 0;
+      }
+
+      .nameposition {
+          padding: 0!important;
+          border: 1px solid yellow;
+          padding-top: 37px!important;
+
+          position: relative;
+          left: -29px;
+
+      }
+
+      #first {
+          font-size: 1.5em !important;
+      }
+
+      #sec{
+          font-size: 3.4rem!important;
+
+      }
+
+      #thir{
+          font-size: 2em!important;
+          text-align: center;
+
+      }
+
+      #four{
+          font-size: 1em!important;
+
+      }
+
+      .btn{
+          display: grid;
+          justify-content: center;
+      }
+
+      #hire_btn{
+          margin-top: 19px;
+      }
+
+      #cv_btn{
+          margin: 0;
+      }
+
+
+  }
+
+
+
+    @media all and (max-width:425px){
+
+        #Home{
+            height: 143vh;
+        }
+
+
+        .Home-Page-Content{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .nameposition {
+            padding-right: 0!important;
+            text-align: center;
+            position: relative;
+            left: 0;
+            width: 100vw;
+
+        }
+
+
+        .MyImg {
+            border: 2px solid orange ;
+            transform: translateX(12px);
+            display: flex;
+            justify-content: center;
+            width: 99vw !important;
+        }
+
+
+        #first{
+            transform: translate(-5em, -17em);
+        }
+
+        #sec {
+            font-size: 3rem !important;
+        }
+
+        #thir {
+            font-size: 1.8em !important;
+        }
+
+        #four{
+
+            text-align: center;
+        }
+
 
 }

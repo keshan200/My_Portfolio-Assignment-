@@ -1,0 +1,154 @@
+
+#Home{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+
+}
+
+
+.headerbar{
+    background-color: black;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 999!important;
+    border-radius: 50px;
+}
+
+nav{
+    width: 58em ;
+    margin-right: 1em ;
+}
+
+.logo img{
+    max-width: 212px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.NavigtionLink{
+    list-style: none;
+    display: flex;
+}
+
+.NavigtionLink li a{
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-right: 25px;
+}
+.Home-Page-Content{
+    border: 1px solid greenyellow;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+  /*  margin-right: 2em;*/
+    position: relative;
+    top: 130px;
+}
+
+
+.MyImg{
+   /* border: 3px solid red;*/
+    width: 500px;
+    height: auto;
+    transform: rotate(-1deg);
+    margin-left: 2.3em;
+    margin-top:1em
+}
+
+
+.MyImg img{
+    width: 510px;
+    height: auto;
+}
+
+
+.di{
+    width: 52vw;
+    border: 1px solid gold;
+}
+
+
+.nameposition{
+
+    width: 725px;
+    right: -43em;
+    margin-right: 5em;
+    margin-top: 5em;
+
+
+    border: 1px solid deeppink;
+
+
+}
+
+#first{
+    font-size: 2rem;
+    color: whitesmoke;
+    transform: translate(-2em,-2.3em);
+}
+
+#sec{
+    margin: 0;
+    font-size: 6rem;
+    color: limegreen;
+    transform: translate(17px,-118px);
+}
+
+#thir{
+    margin: 0;
+    font-size: 3.6rem;
+    color: whitesmoke;
+    width: 714px;
+    transform: translate(23px,-128px);
+}
+
+#four{
+    margin: 0;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transform: translate(2px,-125px);
+    text-align: center;
+    font-family:  "Poppins", sans-serif;
+    font-weight: normal;
+    margin-top: 1em;
+}
+
+.btn{
+    transform: translate(209px, -65px);
+    width: 358px;
+}
+
+.btn button{
+    border-radius: 25px;
+    width: 147px;
+    height: 37px;
+    font-weight: bold;
+    font-size:1.1rem ;
+}
+
+#cv_btn{
+    margin-right: 35px;
+    background: black;
+    color: lime;
+    border: 2px solid lime;
+    transition-timing-function:ease;
+    transition-property: background,border,transform;
+
+}
+
+#hire_btn{
+    background: orange;
+    color: white;
+    animation-iteration-count: infinite;
+
+}
