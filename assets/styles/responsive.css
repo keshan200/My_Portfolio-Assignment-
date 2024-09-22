@@ -192,7 +192,7 @@
 
 
      .MyImg {
-         border: 1px solid orange;
+
          transform: translateX(14px)!important;
          display: flex;
          justify-content: center!important;
@@ -263,7 +263,7 @@
   @media all and (max-width:320px){
 
     .MyImg img {
-        border: 1px solid orange;
+
         height: auto;
         width: 100%!important;
        /* width: 318px;*/
