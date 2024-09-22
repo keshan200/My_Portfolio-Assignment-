@@ -97,7 +97,6 @@
      .nameposition {
          padding: 0!important;
          padding-top: 37px!important;
-
          position: relative;
          left: -29px;
 
@@ -193,7 +192,6 @@
 
 
      .MyImg {
-         border: 2px solid orange ;
          transform: translateX(14px);
          display: flex;
          justify-content: center!important;
