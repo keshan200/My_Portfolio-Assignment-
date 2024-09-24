@@ -2,9 +2,9 @@
 #education-journey{
     height: auto;
     width: 100vw;
-    background-color: transparent;
+    background-color: black;
     position: relative;
-   /* border: 1px solid deeppink;*/
+    /*border: 1px solid deeppink;*/
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -18,7 +18,7 @@
     font-size: 3rem;
     font-weight: bold;
 
- /*   border: 1px solid orange;*/
+  /*  border: 1px solid orange;*/
 }
 
 
@@ -31,6 +31,7 @@
 
 
 
+
     overflow-x: hidden;
     overflow-y:auto;
 
@@ -38,9 +39,28 @@
 
 .e-card{
   /* border: 2px solid blue;*/
-    width: 50vw;
 
 
+    display: flex;
+    justify-content: center;
+}
+
+.e-card div {
+
+
+    margin:20px auto;
+    color: lime;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+   /* border: 2px solid lime;*/
+    border-radius: 20px;
+    border: 2px solid lime;
+    box-shadow: 0 4px 30px rgba(0, 255, 0, 0.3);
+    max-width: /*33.04vw*/ 500px;
+    Height: /*39.07vh*/ auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 #certificate{
@@ -56,20 +76,7 @@
     animation: dimLight 2s infinite alternate;
 }
 
-.e-card div{
-    color: lime;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    background-color: black;
-    border: 2px solid lime;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
-    Width: 33.04vw;
-    Height: /*39.07vh*/auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-}
+
 
 .date{
     font-size: 1.5rem;
@@ -77,6 +84,7 @@
     font-family: 'Almarai', sans-serif;
     text-align: left;
     color: white;
+
 }
 
 
@@ -84,6 +92,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Almarai', sans-serif;
+   margin: 0;
 }
 
 
@@ -98,11 +107,12 @@
 .desc{
     font-weight: normal;
     font-family: 'Almarai', sans-serif;
-    width: 30vw;
+
     text-align: center;
-   padding-top: 35px;
+   /*padding-top: 35px;*/
     color: whitesmoke;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 

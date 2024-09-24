@@ -277,6 +277,13 @@
          height: 198vw!important;
      }
 
+
+     /*education page*/
+
+     .e-card div{
+         width: 327px;
+     }
+
     }
 
 
@@ -288,6 +295,12 @@
 
       #about-me{
           height: 226vw!important;
+      }
+
+
+      /*education page*/
+      .e-card div{
+          width: 267px;
       }
  }
 
@@ -331,6 +344,11 @@
           height: 300vw!important;
       }
 
+
+      /*education page*/
+      .e-card div{
+          width: 237px;
+      }
 
  }
 
