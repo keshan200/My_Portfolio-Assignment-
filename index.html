@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="assets/styles/about-me-page.css">
     <link rel="stylesheet" href="assets/styles/education-page.css">
 
+
+
+
+
+
     <!--HeaderBar Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,22 +43,607 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
 
     <style>
+
         body{
             overflow-x: hidden;
-            background-color: gray;
+          /*  background-color: #010505fa;*/
+            background-color: black;
 
+
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 100vw;
+
+        }
+
+
+       /* !* Dot Wrapper Styles *!
+        .dotWrapper {
+            position: absolute;
+        }
+
+        .dotWrapper-1 {
+            top: 38%;
+            left: 29%;
+            animation: flying 46s ease-in-out -2.3s infinite alternate;
+        }
+
+        .dotWrapper-2 {
+            top: 22%;
+            left: 88%;
+            animation: flying 64s ease-in-out -3.4s infinite alternate;
+        }
+
+        .dotWrapper-3 {
+            top: 47%;
+            left: 12%;
+            animation: flying 55s ease-in-out -1.2s infinite alternate;
+        }
+
+        !* Repeat for each .dotWrapper up to 75 *!
+        .dotWrapper-75 {
+            top: 19%;
+            left: 74%;
+            animation: flying 33s ease-in-out -5.9s infinite alternate;
+        }
+
+        !* Dot Styles *!
+        .dot {
+            width: 4px;
+            height: 4px;
+            background: lime;
+            border-radius: 50%;
+        }
+
+        .dot-1 {
+            transform-origin: -13px 14px;
+            animation: rotating 18s ease-in-out -4.1s infinite;
+        }
+
+        .dot-2 {
+            transform-origin: 10px -12px;
+            animation: rotating 27s ease-in-out -5.3s infinite;
+        }
+
+        .dot-3 {
+            transform-origin: -9px -5px;
+            animation: rotating 32s ease-in-out -7.9s infinite;
+        }
+
+        .dot-4 {
+            transform-origin: 12px -8px;
+            animation: rotating 25s ease-in-out -3.1s infinite;
+        }
+
+        .dot-5 {
+            transform-origin: -7px 11px;
+            animation: rotating 30s ease-in-out -2.2s infinite;
+        }
+
+        .dot-6 {
+            transform-origin: 14px -6px;
+            animation: rotating 20s ease-in-out -4.6s infinite;
+        }
+
+        .dot-7 {
+            transform-origin: -5px 13px;
+            animation: rotating 28s ease-in-out -6.1s infinite;
+        }
+
+        .dot-8 {
+            transform-origin: 8px -9px;
+            animation: rotating 24s ease-in-out -3.7s infinite;
+        }
+
+        .dot-9 {
+            transform-origin: -10px 7px;
+            animation: rotating 26s ease-in-out -5.2s infinite;
+        }
+
+        .dot-10 {
+            transform-origin: 5px -10px;
+            animation: rotating 19s ease-in-out -4.4s infinite;
+        }
+
+        .dot-11 {
+            transform-origin: -11px 8px;
+            animation: rotating 29s ease-in-out -6.3s infinite;
+        }
+
+        .dot-12 {
+            transform-origin: 7px -11px;
+            animation: rotating 22s ease-in-out -2.8s infinite;
+        }
+
+        .dot-13 {
+            transform-origin: -12px 9px;
+            animation: rotating 31s ease-in-out -4.5s infinite;
+        }
+
+        .dot-14 {
+            transform-origin: 9px -13px;
+            animation: rotating 21s ease-in-out -3.9s infinite;
+        }
+
+
+
+        .dot-15 {
+            transform-origin: -8px 10px;
+            animation: rotating 27s ease-in-out -5.6s infinite;
+        }
+
+        .dot-16 {
+            transform-origin: 11px -14px;
+            animation: rotating 23s ease-in-out -2.5s infinite;
+        }
+
+        .dot-17 {
+            transform-origin: -6px 12px;
+            animation: rotating 20s ease-in-out -4.3s infinite;
+        }
+
+        .dot-18 {
+            transform-origin: 13px -5px;
+            animation: rotating 25s ease-in-out -3.8s infinite;
+        }
+
+        .dot-19 {
+            transform-origin: -10px 7px;
+            animation: rotating 24s ease-in-out -6.7s infinite;
+        }
+
+        .dot-20 {
+            transform-origin: 12px -9px;
+            animation: rotating 22s ease-in-out -5.9s infinite;
+        }
+
+        .dot-21 {
+            transform-origin: -9px 11px;
+            animation: rotating 28s ease-in-out -7.2s infinite;
+        }
+
+        .dot-22 {
+            transform-origin: 10px -8px;
+            animation: rotating 19s ease-in-out -4.0s infinite;
+        }
+
+        .dot-23 {
+            transform-origin: -11px 9px;
+            animation: rotating 30s ease-in-out -2.9s infinite;
+        }
+
+        .dot-24 {
+            transform-origin: 9px -10px;
+            animation: rotating 21s ease-in-out -6.3s infinite;
+        }
+
+        .dot-25 {
+            transform-origin: -7px 13px;
+            animation: rotating 26s ease-in-out -4.8s infinite;
+        }
+
+        .dot-26 {
+            transform-origin: 13px -7px;
+            animation: rotating 23s ease-in-out -5.4s infinite;
+        }
+
+        .dot-27 {
+            transform-origin: -6px 12px;
+            animation: rotating 32s ease-in-out -7.6s infinite;
+        }
+
+        .dot-28 {
+            transform-origin: 11px -6px;
+            animation: rotating 29s ease-in-out -3.5s infinite;
+        }
+
+        .dot-29 {
+            transform-origin: -8px 10px;
+            animation: rotating 20s ease-in-out -2.4s infinite;
+        }
+
+        .dot-30 {
+            transform-origin: 5px -10px;
+            animation: rotating 27s ease-in-out -5.7s infinite;
+        }
+
+        .dot-31 {
+            transform-origin: -12px 9px;
+            animation: rotating 25s ease-in-out -3.6s infinite;
+        }
+
+        .dot-32 {
+            transform-origin: 9px -11px;
+            animation: rotating 21s ease-in-out -6.2s infinite;
+        }
+
+        .dot-33 {
+            transform-origin: -7px 12px;
+            animation: rotating 24s ease-in-out -4.1s infinite;
+        }
+
+        .dot-34 {
+            transform-origin: 8px -9px;
+            animation: rotating 28s ease-in-out -5.2s infinite;
+        }
+
+        .dot-35 {
+            transform-origin: -9px 10px;
+            animation: rotating 22s ease-in-out -7.3s infinite;
+        }
+
+        .dot-36 {
+            transform-origin: 12px -7px;
+            animation: rotating 29s ease-in-out -4.5s infinite;
+        }
+
+        .dot-37 {
+            transform-origin: -6px 11px;
+            animation: rotating 27s ease-in-out -6.8s infinite;
+        }
+
+        .dot-38 {
+            transform-origin: 11px -8px;
+            animation: rotating 23s ease-in-out -2.7s infinite;
+        }
+
+        .dot-39 {
+            transform-origin: -10px 9px;
+            animation: rotating 32s ease-in-out -4.9s infinite;
+        }
+
+        .dot-40 {
+            transform-origin: 7px -14px;
+            animation: rotating 26s ease-in-out -5.6s infinite;
+        }
+
+        .dot-41 {
+            transform-origin: -8px 13px;
+            animation: rotating 22s ease-in-out -3.2s infinite;
+        }
+
+        .dot-42 {
+            transform-origin: 9px -6px;
+            animation: rotating 28s ease-in-out -6.7s infinite;
+        }
+
+        .dot-43 {
+            transform-origin: -6px 12px;
+            animation: rotating 31s ease-in-out -4.1s infinite;
+        }
+
+        .dot-44 {
+            transform-origin: 12px -5px;
+            animation: rotating 21s ease-in-out -5.5s infinite;
+        }
+
+        .dot-45 {
+            transform-origin: -7px 11px;
+            animation: rotating 29s ease-in-out -7.4s infinite;
+        }
+
+        .dot-46 {
+            transform-origin: 8px -13px;
+            animation: rotating 23s ease-in-out -3.6s infinite;
+        }
+
+        .dot-47 {
+            transform-origin: -9px 8px;
+            animation: rotating 25s ease-in-out -5.2s infinite;
+        }
+
+        .dot-48 {
+            transform-origin: 10px -9px;
+            animation: rotating 27s ease-in-out -4.7s infinite;
+        }
+
+        .dot-49 {
+            transform-origin: -11px 6px;
+            animation: rotating 30s ease-in-out -3.8s infinite;
+        }
+
+        .dot-50 {
+            transform-origin: 7px -12px;
+            animation: rotating 32s ease-in-out -6.0s infinite;
+        }
+
+        .dot-51 {
+            transform-origin: -10px 11px;
+            animation: rotating 24s ease-in-out -2.9s infinite;
+        }
+
+        .dot-52 {
+            transform-origin: 9px -8px;
+            animation: rotating 26s ease-in-out -4.3s infinite;
+        }
+
+        .dot-53 {
+            transform-origin: -8px 12px;
+            animation: rotating 22s ease-in-out -5.6s infinite;
+        }
+
+        .dot-54 {
+            transform-origin: 12px -11px;
+            animation: rotating 29s ease-in-out -7.1s infinite;
+        }
+
+        .dot-55 {
+            transform-origin: -9px 10px;
+            animation: rotating 25s ease-in-out -4.0s infinite;
+        }
+
+        .dot-56 {
+            transform-origin: 10px -13px;
+            animation: rotating 23s ease-in-out -3.5s infinite;
+        }
+
+        .dot-57 {
+            transform-origin: -7px 9px;
+            animation: rotating 30s ease-in-out -6.5s infinite;
+        }
+
+        .dot-58 {
+            transform-origin: 11px -7px;
+            animation: rotating 19s ease-in-out -5.8s infinite;
+        }
+
+        .dot-59 {
+            transform-origin: -6px 13px;
+            animation: rotating 27s ease-in-out -2.2s infinite;
+        }
+
+        .dot-60 {
+            transform-origin: 9px -6px;
+            animation: rotating 28s ease-in-out -4.6s infinite;
+        }
+
+        .dot-61 {
+            transform-origin: -8px 12px;
+            animation: rotating 24s ease-in-out -7.3s infinite;
+        }
+
+        !* Rotating Keyframes *!
+        @keyframes rotating {
+            0% {
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+        !* Flying Keyframes *!
+        @keyframes flying {
+            0% {
+                transform: translate(0, 0);
+            }
+            10% {
+                transform: translate(20px, 50px);
+            }
+            20% {
+                transform: translate(-30px, 10px);
+            }
+            30% {
+                transform: translate(10px, 60px);
+            }
+            40% {
+                transform: translate(50px, 0px);
+            }
+            50% {
+                transform: translate(-10px, -40px);
+            }
+            60% {
+                transform: translate(-40px, 20px);
+            }
+            70% {
+                transform: translate(30px, -30px);
+            }
+            80% {
+                transform: translate(0px, -60px);
+            }
+            90% {
+                transform: translate(40px, 10px);
+            }
+            100% {
+                transform: translate(0, 0);
+            } }*/
+        .dotWrapper {
+            position: absolute;
+        }
+
+        /* Shared Dot Styles */
+        .dot {
+            width: 1px;
+            height: 1px;
+            background: white;
+            border-radius: 50%;
+
+        }
+
+        /* Rotating Keyframes */
+        @keyframes rotating {
+            0% {
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Flying Keyframes */
+        @keyframes flying {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            10% {
+                transform: translate(20px, 50px);
+            }
+            20% {
+                transform: translate(-30px, 10px);
+            }
+            30% {
+                transform: translate(10px, 60px);
+            }
+            40% {
+                transform: translate(50px, 0px);
+            }
+            50% {
+                transform: translate(-10px, -40px);
+            }
+            60% {
+                transform: translate(-40px, 20px);
+            }
+            70% {
+                transform: translate(30px, -30px);
+            }
+            80% {
+                transform: translate(0px, -60px);
+            }
+            90% {
+                transform: translate(40px, 10px);
+            }
         }
 
 
     </style>
 
 
+
+
+
 </head>
 
 
 <body>
+
+<div id="dotContainer"></div>
+
+<!--<script>
+    const dotCount = 800; // Number of dots
+    const container = document.getElementById('dotContainer');
+
+    // Dynamically create dot wrappers and dots
+    for (let i = 1; i <= dotCount; i++) {
+        const dotWrapper = document.createElement('div');
+        dotWrapper.classList.add('dotWrapper');
+        dotWrapper.style.top = `${Math.random() * 100}%`; // Random vertical positioning
+        dotWrapper.style.left = `${Math.random() * 100}%`; // Random horizontal positioning
+        dotWrapper.style.animation = `flying ${20 + Math.random() * 30}s ease-in-out infinite alternate`;
+
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.style.transformOrigin = `${Math.random() * 20 - 10}px ${Math.random() * 20 - 10}px`; // Random origin for rotation
+        dot.style.animation = `rotating ${15 + Math.random() * 20}s ease-in-out infinite`;
+
+        dotWrapper.appendChild(dot);
+        container.appendChild(dotWrapper);
+    }
+</script>-->
+<!--
+
+<div class="dotWrapper dotWrapper-1"><div class="dot dot-1"></div></div>
+<div class="dotWrapper dotWrapper-2"><div class="dot dot-2"></div></div>
+<div class="dotWrapper dotWrapper-3"><div class="dot dot-3"></div></div>
+<div class="dotWrapper dotWrapper-4"><div class="dot dot-4"></div></div>
+<div class="dotWrapper dotWrapper-5"><div class="dot dot-5"></div></div>
+<div class="dotWrapper dotWrapper-6"><div class="dot dot-6"></div></div>
+<div class="dotWrapper dotWrapper-7"><div class="dot dot-7"></div></div>
+<div class="dotWrapper dotWrapper-8"><div class="dot dot-8"></div></div>
+<div class="dotWrapper dotWrapper-9"><div class="dot dot-9"></div></div>
+<div class="dotWrapper dotWrapper-10"><div class="dot dot-10"></div></div>
+<div class="dotWrapper dotWrapper-11"><div class="dot dot-11"></div></div>
+<div class="dotWrapper dotWrapper-12"><div class="dot dot-12"></div></div>
+<div class="dotWrapper dotWrapper-13"><div class="dot dot-13"></div></div>
+<div class="dotWrapper dotWrapper-14"><div class="dot dot-14"></div></div>
+<div class="dotWrapper dotWrapper-15"><div class="dot dot-15"></div></div>
+<div class="dotWrapper dotWrapper-16"><div class="dot dot-16"></div></div>
+<div class="dotWrapper dotWrapper-17"><div class="dot dot-17"></div></div>
+<div class="dotWrapper dotWrapper-18"><div class="dot dot-18"></div></div>
+<div class="dotWrapper dotWrapper-19"><div class="dot dot-19"></div></div>
+<div class="dotWrapper dotWrapper-20"><div class="dot dot-20"></div></div>
+<div class="dotWrapper dotWrapper-21"><div class="dot dot-21"></div></div>
+<div class="dotWrapper dotWrapper-22"><div class="dot dot-22"></div></div>
+<div class="dotWrapper dotWrapper-23"><div class="dot dot-23"></div></div>
+<div class="dotWrapper dotWrapper-24"><div class="dot dot-24"></div></div>
+<div class="dotWrapper dotWrapper-25"><div class="dot dot-25"></div></div>
+<div class="dotWrapper dotWrapper-26"><div class="dot dot-26"></div></div>
+<div class="dotWrapper dotWrapper-27"><div class="dot dot-27"></div></div>
+<div class="dotWrapper dotWrapper-28"><div class="dot dot-28"></div></div>
+<div class="dotWrapper dotWrapper-29"><div class="dot dot-29"></div></div>
+<div class="dotWrapper dotWrapper-30"><div class="dot dot-30"></div></div>
+<div class="dotWrapper dotWrapper-31"><div class="dot dot-31"></div></div>
+<div class="dotWrapper dotWrapper-32"><div class="dot dot-32"></div></div>
+<div class="dotWrapper dotWrapper-33"><div class="dot dot-33"></div></div>
+<div class="dotWrapper dotWrapper-34"><div class="dot dot-34"></div></div>
+<div class="dotWrapper dotWrapper-35"><div class="dot dot-35"></div></div>
+<div class="dotWrapper dotWrapper-36"><div class="dot dot-36"></div></div>
+<div class="dotWrapper dotWrapper-37"><div class="dot dot-37"></div></div>
+<div class="dotWrapper dotWrapper-38"><div class="dot dot-38"></div></div>
+<div class="dotWrapper dotWrapper-39"><div class="dot dot-39"></div></div>
+<div class="dotWrapper dotWrapper-40"><div class="dot dot-40"></div></div>
+<div class="dotWrapper dotWrapper-41"><div class="dot dot-41"></div></div>
+<div class="dotWrapper dotWrapper-42"><div class="dot dot-42"></div></div>
+<div class="dotWrapper dotWrapper-43"><div class="dot dot-43"></div></div>
+<div class="dotWrapper dotWrapper-44"><div class="dot dot-44"></div></div>
+<div class="dotWrapper dotWrapper-45"><div class="dot dot-45"></div></div>
+<div class="dotWrapper dotWrapper-46"><div class="dot dot-46"></div></div>
+<div class="dotWrapper dotWrapper-47"><div class="dot dot-47"></div></div>
+<div class="dotWrapper dotWrapper-48"><div class="dot dot-48"></div></div>
+<div class="dotWrapper dotWrapper-49"><div class="dot dot-49"></div></div>
+<div class="dotWrapper dotWrapper-50"><div class="dot dot-50"></div></div>
+<div class="dotWrapper dotWrapper-51"><div class="dot dot-51"></div></div>
+<div class="dotWrapper dotWrapper-52"><div class="dot dot-52"></div></div>
+<div class="dotWrapper dotWrapper-53"><div class="dot dot-53"></div></div>
+<div class="dotWrapper dotWrapper-54"><div class="dot dot-54"></div></div>
+<div class="dotWrapper dotWrapper-55"><div class="dot dot-55"></div></div>
+<div class="dotWrapper dotWrapper-56"><div class="dot dot-56"></div></div>
+<div class="dotWrapper dotWrapper-57"><div class="dot dot-57"></div></div>
+<div class="dotWrapper dotWrapper-58"><div class="dot dot-58"></div></div>
+<div class="dotWrapper dotWrapper-59"><div class="dot dot-59"></div></div>
+<div class="dotWrapper dotWrapper-60"><div class="dot dot-60"></div></div>
+<div class="dotWrapper dotWrapper-61"><div class="dot dot-61"></div></div>
+<div class="dotWrapper dotWrapper-62"><div class="dot dot-62"></div></div>
+<div class="dotWrapper dotWrapper-63"><div class="dot dot-63"></div></div>
+<div class="dotWrapper dotWrapper-64"><div class="dot dot-64"></div></div>
+<div class="dotWrapper dotWrapper-65"><div class="dot dot-65"></div></div>
+<div class="dotWrapper dotWrapper-66"><div class="dot dot-66"></div></div>
+<div class="dotWrapper dotWrapper-67"><div class="dot dot-67"></div></div>
+<div class="dotWrapper dotWrapper-68"><div class="dot dot-68"></div></div>
+<div class="dotWrapper dotWrapper-69"><div class="dot dot-69"></div></div>
+<div class="dotWrapper dotWrapper-70"><div class="dot dot-70"></div></div>
+<div class="dotWrapper dotWrapper-71"><div class="dot dot-71"></div></div>
+<div class="dotWrapper dotWrapper-72"><div class="dot dot-72"></div></div>
+<div class="dotWrapper dotWrapper-73"><div class="dot dot-73"></div></div>
+<div class="dotWrapper dotWrapper-74"><div class="dot dot-74"></div></div>
+<div class="dotWrapper dotWrapper-75"><div class="dot dot-75"></div></div>
+-->
+
+
+
 
 
 <!--Home Page-->
@@ -158,69 +748,67 @@
 
 
 <!--Education Journey page-->
-<!--
 <main id="education-journey">
 
-    &lt;!&ndash;Title&ndash;&gt;
+    <!--Title-->
     <div>
         <p id="Education_title"> Journey Of Education</p>
+
+        <p id="certificate">View My Certificates</p>
     </div>
 
-    &lt;!&ndash;main iamge&ndash;&gt;
-    <div>
-        <img src="">
-    </div>
 
-    &lt;!&ndash;Eduaction Details&ndash;&gt;
+    <!--Eduaction Details-->
     <section  class="education_sec">
 
-        &lt;!&ndash;Ijse&ndash;&gt;
-        <div class="e-card">
+        <!--Ijse-->
+        <div class="e-card animate__animated animate__zoomOut">
             <div>
-            <img src="">
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
+                <p class="date">2023-Present</p>
+                <p class="course">Graduate Diploma in Software Engineering</p>
+                <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
             </div>
         </div>
 
-        &lt;!&ndash;Sliit&ndash;&gt;
-        <div class="e-card">
-            <div>
-            <img src="">
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
+
+        <!--Sliit-->
+        <div class="e-card animate__animated animate__zoomOut">
+            <div class="">
+                <p class="date">2023-Present</p>
+                <p class="course">Certificate Course in AI/ML Engineering</p>
+                <p class="location">SLIIT-Sri Lanka Institute of Information Technology-Malabe</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
             </div>
         </div>
 
-        &lt;!&ndash;TEB&ndash;&gt;
-        <div class="e-card">
+        <!--TEB-->
+        <div class="e-card animate__animated animate__zoomOut">
         <div>
-            <img src="">
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p class="date">2023-Present</p>
+            <p class="course">Certificate Course in AI/ML Engineering</p>
+            <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+            <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
         </div>
         </div>
 
-        &lt;!&ndash;Britishway&ndash;&gt;
-        <div class="e-card">
+        <!--Britishway-->
+        <div class="e-card animate__animated animate__zoomOut">
             <div>
-            <img src="">
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
+                <p class="date">2023-Present</p>
+                <p class="course">Graduate Diploma in Software Engineering</p>
+                <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
             </div>
         </div>
 
-        &lt;!&ndash;School&ndash;&gt;
-        <div class="e-card">
+        <!--School-->
+        <div class="e-card animate__animated animate__zoomOut">
             <div>
-            <img src="">
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet</p>
+                <p class="date">2023-Present</p>
+                <p class="course">Graduate Diploma in Software Engineering</p>
+                <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
             </div>
         </div>
 
@@ -230,7 +818,6 @@
 
 
 </main>
--->
 
 
 

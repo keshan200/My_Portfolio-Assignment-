@@ -30,7 +30,7 @@
 
      .Home-Page-Content{
          position: relative;
-         top: 100px;
+         top: 70px!important;
          padding-right: 21px;
      }
 
@@ -71,6 +71,10 @@
          transition-duration: 0.5s;
 
      }
+
+
+     /*education page*/
+
 }
 
 
@@ -92,6 +96,10 @@
 
      .Home-Page-Content{
          padding: 0;
+
+
+         position: relative;
+         top: 100px!important;
      }
 
      .nameposition {
@@ -162,6 +170,30 @@
 
      .myimg {
          width: 220px!important;
+     }
+
+     /*education page*/
+     #education-journey{
+         display: flex!important;
+          flex-direction: column!important;
+          width: 100vw!important;
+     }
+
+     .education_sec{
+         width: 98vw!important;
+     }
+
+     .e-card{
+         width: 98vw !important;
+     }
+
+     #Education_title{
+         text-align: center;
+     }
+
+     #certificate{
+         padding-top: 0!important;
+         padding-bottom: 50px!important;
      }
  }
 

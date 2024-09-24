@@ -2,7 +2,7 @@
 #about-me{
     height: 130vh;
     width: 100vw;
-    background-color: black;
+    background-color: transparent;
     position: relative;
     top: 41px;;
 }
@@ -24,7 +24,7 @@
   /*  border: 1px solid gold;*/
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .im{

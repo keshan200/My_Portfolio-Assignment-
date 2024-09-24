@@ -1,49 +1,110 @@
 
 #education-journey{
-    height: 100vh;
+    height: auto;
     width: 100vw;
-    background-color: gray;
+    background-color: transparent;
     position: relative;
+   /* border: 1px solid deeppink;*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+
+
 }
 
 #Education_title{
     color: white;
     font-size: 3rem;
     font-weight: bold;
+
+ /*   border: 1px solid orange;*/
 }
 
 
 .education_sec{
-    border: 2px solid lime;
+  /*  border: 2px solid lime;*/
+    height: 60vh;
     width: 50vw;
-    height: 50vh;
-    transform: translate(40em,-6em);
-
-    overflow-y: auto;
-    overflow-x: hidden;
-
     display: grid;
     grid-template-columns: repeat(1,1fr);
+
+
+
+    overflow-x: hidden;
+    overflow-y:auto;
 
 }
 
 .e-card{
-   border: 2px solid red;
-    width: 491px;
+  /* border: 2px solid blue;*/
+    width: 50vw;
 
+
+}
+
+#certificate{
+    color: lime;
+    font-family: "Almarai", sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding-top: 60px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+    text-decoration: underline 5px;
+    animation: dimLight 2s infinite alternate;
 }
 
 .e-card div{
+    color: lime;
+    margin: 20px auto;
     padding: 10px;
-    margin:20px auto;
-    background: springgreen;
     text-align: center;
-    border-radius: 10px;
-    max-width: 250px;
-
-
-
+    background-color: black;
+    border: 2px solid lime;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+    Width: 33.04vw;
+    Height: /*39.07vh*/auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
+
+.date{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Almarai', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+
+.course{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Almarai', sans-serif;
+}
+
+
+.location{
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Almarai', sans-serif;
+}
+
+
+
+.desc{
+    font-weight: normal;
+    font-family: 'Almarai', sans-serif;
+    width: 30vw;
+    text-align: center;
+   padding-top: 35px;
+    color: whitesmoke;
+    margin: auto;
+}
+
 
 
 ::-webkit-scrollbar {
@@ -52,7 +113,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: orangered;
+    background: lime;
     border-radius: 20px;
     height: 100px;
 }
@@ -61,4 +122,26 @@
 
 ::-webkit-scrollbar-track {
     background: #333;
+}
+
+
+
+
+@keyframes dimLight {
+    0% {
+        text-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 15px lime;
+        opacity: 0.5;
+    }
+    100% {
+        text-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+        opacity: 1;
+    }
+}
+
+#certificate:hover {
+    filter: brightness(1.5);
 }

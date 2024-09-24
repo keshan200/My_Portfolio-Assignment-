@@ -2,7 +2,8 @@
 #Home{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+   /* background-color: black;*/
+    background: black;
 
 
 }
@@ -16,8 +17,10 @@
     justify-content: space-between;
     align-items: center;
 
+   border-bottom: 2px solid lime;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
     z-index: 999!important;
-    border-radius: 50px;
+
 }
 
 nav{
@@ -42,6 +45,8 @@ nav{
     font-family: "Poppins", sans-serif;
     color: white;
     margin-right: 25px;
+    text-decoration: none;
+
 }
 
 
@@ -74,17 +79,19 @@ nav{
 }
 
 
-.nameposition{
-   /* border: 1px solid yellow;*/
+.nameposition {
+  /*  border: 1px solid yellow;*/
     padding-top: 67px;
     padding-right: 116px;
     width: 128vw;
+
 }
 
 
-
 .di{
-    /*border: 2px solid red;*/
+   /* border: 2px solid red;*/
+    text-align: center;
+
 }
 
 
@@ -92,13 +99,14 @@ nav{
     font-size: 2rem;
     color: whitesmoke;
     margin: 0;
-    transform: translate(-4em, -1em);
+    transform: translate(-13em, -1em);
 }
 
 #sec{
     font-size: 6rem;
     color: limegreen;
     margin: 0;
+/*    text-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;*/
 }
 
 
@@ -121,7 +129,7 @@ nav{
 
 
 .btn{
-    /*border: 2px solid blue;*/
+   /* border: 2px solid blue;*/
     text-align: center;
     margin-top: 30px;
 }
@@ -151,4 +159,5 @@ nav{
     animation-iteration-count: infinite;
 
 }
+
 
