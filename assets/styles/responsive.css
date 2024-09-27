@@ -73,7 +73,20 @@
      }
 
 
-     /*education page*/
+     /*Language & Tools*/
+     .grid-sec{
+         display: grid;
+         /*grid-template-columns: repeat(3,3fr);*/
+     }
+
+     .icons{
+         grid-template-columns: repeat(3,3fr);
+     }
+
+     .icons img{
+         width: 57px !important;
+         border-radius: 26px;
+     }
 
 }
 
@@ -194,6 +207,12 @@
      #certificate{
          padding-top: 0!important;
          padding-bottom: 50px!important;
+     }
+
+
+     /*Languages & Tools*/
+     .icons img{
+         margin: 34px!important;
      }
  }
 
