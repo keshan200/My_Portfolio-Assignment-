@@ -369,5 +369,18 @@
           width: 237px;
       }
 
+      /*Language & Tools section*/
+
+      .count-projects div p {
+          font-size: 1rem!important;
+
+      }
+
+      .count-projects div{
+          gap: 13px!important;
+      }
+
+
+
  }
 
