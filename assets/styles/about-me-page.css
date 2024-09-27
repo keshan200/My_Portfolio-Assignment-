@@ -16,9 +16,10 @@
 
 .title p{
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     margin: 0;
+    font-family: "Almarai", sans-serif;
 }
 
 .main{
@@ -80,4 +81,114 @@
     transform: scale(40%) ;
     margin-right: 1px;
     transition-duration: 0.5s;
+}
+
+
+@media all and (max-width: 1024px){
+
+    #details{
+        font-size: 0.9rem!important;
+    }
+
+    .myimg{
+        width: 304px!important;
+    }
+    .Social_meadias{
+        width: 45vw!important;
+        transform: translate(614px, 30px)!important;
+    }
+
+    .Social_meadias>a>img{
+        transform: scale(35%);
+        margin-right: 1px;
+        transition-duration: 0.5s;
+
+    }
+}
+
+
+@media all and (max-width: 768px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #details{
+        font-size: 0.9rem!important;
+    }
+
+    .details_sec{
+        margin-top: 96px;
+        height: auto;
+    }
+
+    .Social_meadias{
+        transform: translate(341px, -12em)!important;
+    }
+
+    .im{
+        width: 99vw!important;
+    }
+
+    .myimg {
+        width: 220px!important;
+    }
+}
+
+
+@media all and (max-width: 425px){
+    .Social_meadias>a>img {
+        transform: scale(35%)!important;
+        margin-right: -29px!important;
+    }
+
+    .Social_meadias{
+        transform:translate(231px, -20em)!important;
+    }
+
+    .details_sec{
+        width: 79vw!important;
+    }
+
+    #about-me{
+        position: relative;
+        top: 50px;
+        height: 198vw!important;
+    }
+
+}
+
+
+@media all and (max-width: 376px){
+    .Social_meadias{
+        transform: translate(218px, -22em) !important;
+
+    }
+
+    #about-me{
+        height: 226vw!important;
+    }
+}
+
+
+
+@media all and (max-width: 320px){
+
+    .Social_meadias{
+        transform: translate(192px, -30em)!important
+    }
+
+    .Social_meadias>a>img {
+        transform: scale(30%)!important;
+        margin-right: -48px !important;
+    }
+
+    #about-me{
+        position: relative;
+        top: 50px;
+        height: 300vw!important;
+    }
+
 }

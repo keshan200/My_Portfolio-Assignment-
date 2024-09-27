@@ -22,7 +22,6 @@
     border: 1px solid whitesmoke;
     width: 70vw;
     border-radius: 60px;
-
     display: flex;
    justify-content: space-evenly;
 
@@ -65,11 +64,83 @@
 
 .icons img{
     height: auto;
-    width: 78px;
+    width: 66px;
     margin: 40px;
     padding: 10px;
     border: 2px solid lime;
-    border-radius: 30px;
+    border-radius: 20px;
 
+    animation: anime3 8s infinite;
+    transform-style: preserve-3d;
+}
+
+
+@keyframes anime3 {
+    0% {
+        transform: rotate3d(1, 1, 0, 0deg); /* No rotation */
+    }
+    50% {
+        transform: rotate3d(1, 1, 0, 180deg); /* Half rotation */
+    }
+    100% {
+        transform: rotate3d(1, 1, 0, 360deg); /* Full rotation */
+    }
+}
+
+
+@media all and (max-width: 1024px ){
+    .grid-sec{
+        display: grid;
+        /*grid-template-columns: repeat(3,3fr);*/
+    }
+
+    .icons{
+        grid-template-columns: repeat(3,3fr);
+    }
+
+    .icons img{
+        width: 57px !important;
+        border-radius: 26px;
+    }
+}
+
+@media all and (max-width: 768px ){
+    .icons img{
+        margin: 34px!important;
+    }
+}
+
+
+@media all and (max-width: 425px ){
+    .count-projects div p{
+        font-size: 1.3rem!important;
+    }
+
+    .count-projects div{
+        gap: 20px;
+    }
+}
+
+
+@media all and (max-width: 376px){
+    .count-projects div p {
+        font-size: 1rem!important;
+    }
+
+    .count-projects div {
+        gap: 20px;
+    }
+}
+
+
+@media all and (max-width: 320px){
+    .count-projects div p {
+        font-size: 1rem!important;
+
+    }
+
+    .count-projects div{
+        gap: 13px!important;
+    }
 }
 

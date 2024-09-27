@@ -50,19 +50,19 @@
 }
 
 .e-card div {
-
-
     margin:20px auto;
     color: lime;
     padding: 10px;
     text-align: center;
-    background-color: black;
+    background-color: #0F0F0F;
    /* border: 2px solid lime;*/
     border-radius: 20px;
-    border: 2px solid lime;
-    box-shadow: 0 4px 30px rgba(0, 255, 0, 0.3);
-    max-width: /*33.04vw*/ 500px;
-    Height: /*39.07vh*/ auto;
+    /*border: 2px solid lime;
+    box-shadow: 0 4px 30px rgba(0, 255, 0, 0.3);*/
+
+    box-shadow: 0 4px 8px whitesmoke;
+    max-width: 500px;
+    Height:  auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
@@ -158,4 +158,56 @@
 
 #certificate:hover {
     filter: brightness(1.5);
+}
+
+
+
+@media all and (max-width: 768px){
+    #education-journey{
+        display: flex!important;
+        flex-direction: column!important;
+        width: 100vw!important;
+    }
+
+    .education_sec{
+        width: 98vw!important;
+    }
+
+    .e-card{
+        width: 98vw !important;
+    }
+
+    #Education_title{
+        text-align: center;
+    }
+
+    #certificate{
+        padding-top: 0!important;
+        padding-bottom: 50px!important;
+    }
+
+
+}
+
+
+
+@media all and (max-width: 425px){
+    .e-card div{
+        width: 327px;
+    }
+}
+
+
+
+@media all and (max-width: 376px){
+    .e-card div{
+        width: 267px;
+    }
+}
+
+
+@media all and (max-width: 320px){
+    .e-card div{
+        width: 237px;
+    }
 }

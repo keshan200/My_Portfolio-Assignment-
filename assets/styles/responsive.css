@@ -51,43 +51,6 @@
          font-size: 3em!important;
      }
 
-
- /*about me page*/
-     #details{
-         font-size: 0.9rem!important;
-     }
-
-     .myimg{
-         width: 304px!important;
-     }
-     .Social_meadias{
-         width: 45vw!important;
-         transform: translate(614px, 30px)!important;
-     }
-
-     .Social_meadias>a>img{
-         transform: scale(35%);
-         margin-right: 1px;
-         transition-duration: 0.5s;
-
-     }
-
-
-     /*Language & Tools*/
-     .grid-sec{
-         display: grid;
-         /*grid-template-columns: repeat(3,3fr);*/
-     }
-
-     .icons{
-         grid-template-columns: repeat(3,3fr);
-     }
-
-     .icons img{
-         width: 57px !important;
-         border-radius: 26px;
-     }
-
 }
 
 
@@ -157,64 +120,6 @@
      }
 
 
-     /*about me page*/
-     .main{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
-     }
-
-      #details{
-          font-size: 0.9rem!important;
-      }
-
-      .details_sec{
-          margin-top: 96px;
-          height: auto;
-      }
-
-     .Social_meadias{
-         transform: translate(341px, -12em)!important;
-     }
-
-     .im{
-         width: 99vw!important;
-     }
-
-     .myimg {
-         width: 220px!important;
-     }
-
-     /*education page*/
-     #education-journey{
-         display: flex!important;
-          flex-direction: column!important;
-          width: 100vw!important;
-     }
-
-     .education_sec{
-         width: 98vw!important;
-     }
-
-     .e-card{
-         width: 98vw !important;
-     }
-
-     #Education_title{
-         text-align: center;
-     }
-
-     #certificate{
-         padding-top: 0!important;
-         padding-bottom: 50px!important;
-     }
-
-
-     /*Languages & Tools*/
-     .icons img{
-         margin: 34px!important;
-     }
  }
 
 
@@ -272,74 +177,14 @@
          margin: 0!important;
      }
 
-     /*about me page*/
 
-
-
-
-
-     .Social_meadias>a>img {
-         transform: scale(35%)!important;
-         margin-right: -29px!important;
-     }
-
-     .Social_meadias{
-         transform:translate(231px, -20em)!important;
-     }
-
-     .details_sec{
-         width: 79vw!important;
-     }
-
-     #about-me{
-         position: relative;
-         top: 50px;
-         height: 198vw!important;
-     }
-
-
-     /*education page*/
-
-     .e-card div{
-         width: 327px;
-     }
-
-     /*Language & Tools */
-     .count-projects div p{
-         font-size: 1.3rem!important;
-     }
-
-     .count-projects div{
-         gap: 20px;
-     }
 
     }
 
 
   @media all and (max-width:376px){
-     .Social_meadias{
-         transform: translate(218px, -22em) !important;
-
-     }
-
-      #about-me{
-          height: 226vw!important;
-      }
 
 
-      /*education page*/
-      .e-card div{
-          width: 267px;
-      }
-
-      /*Languages & Tools*/
-      .count-projects div p {
-          font-size: 1rem!important;
-      }
-
-      .count-projects div {
-          gap: 20px;
-      }
  }
 
 
@@ -364,41 +209,6 @@
           margin: 0!important;
           width: 93vw!important;
       }
-
-
-      /*about me page*/
-      .Social_meadias{
-          transform: translate(192px, -30em)!important
-      }
-
-      .Social_meadias>a>img {
-          transform: scale(30%)!important;
-          margin-right: -48px !important;
-      }
-
-      #about-me{
-          position: relative;
-          top: 50px;
-          height: 300vw!important;
-      }
-
-
-      /*education page*/
-      .e-card div{
-          width: 237px;
-      }
-
-      /*Language & Tools section*/
-
-      .count-projects div p {
-          font-size: 1rem!important;
-
-      }
-
-      .count-projects div{
-          gap: 13px!important;
-      }
-
 
 
  }
