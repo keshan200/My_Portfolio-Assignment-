@@ -171,6 +171,7 @@
 
       .details_sec{
           margin-top: 96px;
+          height: auto;
       }
 
      .Social_meadias{
@@ -303,6 +304,15 @@
          width: 327px;
      }
 
+     /*Language & Tools */
+     .count-projects div p{
+         font-size: 1.3rem!important;
+     }
+
+     .count-projects div{
+         gap: 20px;
+     }
+
     }
 
 
@@ -320,6 +330,15 @@
       /*education page*/
       .e-card div{
           width: 267px;
+      }
+
+      /*Languages & Tools*/
+      .count-projects div p {
+          font-size: 1rem!important;
+      }
+
+      .count-projects div {
+          gap: 20px;
       }
  }
 

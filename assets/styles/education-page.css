@@ -10,6 +10,8 @@
     flex-direction: row;
 
 
+    top: 63px;
+
 
 }
 
@@ -17,6 +19,8 @@
     color: white;
     font-size: 3rem;
     font-weight: bold;
+
+
 
   /*  border: 1px solid orange;*/
 }
