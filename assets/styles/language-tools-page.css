@@ -1,0 +1,75 @@
+#language-tools{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    top: 121px;
+}
+
+
+.title-section{
+  /*  border: 1px solid deeppink;*/
+}
+
+.count-projects{
+    /*border: 1px solid blue;*/
+
+    display: flex;
+    justify-content: center;
+}
+
+.count-projects div {
+    border: 1px solid whitesmoke;
+    width: 70vw;
+    border-radius: 60px;
+
+    display: flex;
+   justify-content: space-evenly;
+
+   /* gap: 20px; *//* Adds space between each <p> element */
+    padding: 20px;
+}
+
+.count-projects div p{
+    color: lime;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+
+
+}
+
+
+.title{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+.icons{
+   /* border: 1px solid blue;*/
+    text-align: center;
+  /*  border: 1px solid red;*/
+
+}
+
+/*.first-sec{
+    border: 1px solid gold;
+}
+
+.second-sec{
+    border: 1px solid deeppink;
+}*/
+
+.icons img{
+    height: auto;
+    width: 78px;
+    margin: 40px;
+    padding: 10px;
+    border: 2px solid lime;
+    border-radius: 30px;
+
+}
+
