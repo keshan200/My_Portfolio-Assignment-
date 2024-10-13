@@ -111,7 +111,7 @@
 }
 
 
-@media all and (max-width: 425px ){
+@media all and (max-width: 426px ){
     .count-projects div p{
         font-size: 1.3rem!important;
     }

@@ -117,6 +117,7 @@
 
     #details{
         font-size: 0.9rem!important;
+        width: 82vw!important;
     }
 
     .details_sec{
@@ -138,7 +139,7 @@
 }
 
 
-@media all and (max-width: 425px){
+@media all and (max-width: 426px){
     .Social_meadias>a>img {
         transform: scale(35%)!important;
         margin-right: -29px!important;

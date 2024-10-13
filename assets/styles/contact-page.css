@@ -4,83 +4,132 @@
     height: auto;
     position: relative;
     top: 600px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .main-sec{
   /*  border: 1px solid red;*/
+     width: 55vw;
+     margin-top: 10px;
 
     display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
 .form-sec{
-   /* border: 1px solid lime;*/
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  /*  border: 1px solid lime;*/
+
 }
 
 
 .description{
-    /*border: 1px solid blue;*/
-    width: 100vw;
-    font-family: 'Almarai', sans-serif;
-    font-size: 1.2rem;
-    color: whitesmoke;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /*  border: 1px solid blue;*/
+    font-weight: bold;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
 }
 
+
+
+.header{
+    font-family: "Almarai", sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.header h5{
+    margin-bottom: 10px;
+}
+
+
+.description{
+    margin-top: 20px;
+    /*border: 1px solid blue;*/
+    width: 55vw;
+   display: flex;
+    justify-content: center;
+}
 
 .description p{
-    width: 420px;
-}
-.header{
-    font-size: 2rem;
-    color: whitesmoke;
-    font-family: 'Almarai', sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px;
+    line-height: 1.8;
+    width: 48vw;
+   /* border: 1px solid deeppink;*/
 }
 
 
 .form{
     display: flex;
-    align-items: center;
-    width: 31vw;
-    height: 65vh;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: #0F0F0F;
-
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub-btn{
-    width: 110px;
-    height: 50px;
+    width: 160px;
     border-radius: 30px;
-    text-align: center;
-    background-color: darkorange;
+    background-color: lime;
+    color: black;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
+
+.sub-btn p{
+    margin: 10px;
 }
 
 .textField{
-    width: 30vw;
-    height: 50px;
+    width: 45vw;
+    height: 20px;
     border-radius: 10px;
-    gap: 50px;
-    margin: 30px;
-    background-color: grey;
-    text-align: center;
-    font-family: "Almarai", sans-serif;
-    color: whitesmoke;
+    border: 2px solid lime;
+    background-color: #0F0F0F;
+    margin: 13px;
+    padding: 10px;
+    font-family: 'Almarai', sans-serif;
 }
 
 
-.desc-txt{
-    height: 100px;
+.msg{
+    height: 80px;
+}
+
+.footer{
+
+ width: 100vw;
+    text-align: center;
+}
+
+.social-nav{
+    background-color: black;
+   /* border: 1px solid deeppink;*/
+    margin-top: 20px;
+}
+
+.social-nav a img{
+   width: 40px;
+    height: auto;
+    margin: 0 15px;
+}
+
+
+.author{
+    background-color: #0F0F0F;
+    padding: 10px;
 }
