@@ -146,7 +146,7 @@
     }
 
     .Social_meadias{
-        transform:translate(231px, -20em)!important;
+        transform:translate(224px, -15em)!important;
     }
 
     .details_sec{
@@ -164,7 +164,7 @@
 
 @media all and (max-width: 376px){
     .Social_meadias{
-        transform: translate(218px, -22em) !important;
+        transform: translate(218px, -17em) !important;
 
     }
 
@@ -178,7 +178,7 @@
 @media all and (max-width: 320px){
 
     .Social_meadias{
-        transform: translate(192px, -30em)!important
+        transform: translate(192px, -20em)!important
     }
 
     .Social_meadias>a>img {

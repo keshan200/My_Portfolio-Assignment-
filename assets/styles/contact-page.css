@@ -14,8 +14,8 @@
 
 
 .main-sec{
-  /*  border: 1px solid red;*/
-     width: 55vw;
+ /*   border: 1px solid red;*/
+     width: 100vw; /*55*/
      margin-top: 10px;
 
     display: flex;
@@ -25,19 +25,11 @@
 
 
 .form-sec{
-  /*  border: 1px solid lime;*/
+/*    border: 1px solid lime;*/
 
 }
 
 
-.description{
-  /*  border: 1px solid blue;*/
-    font-weight: bold;
-    font-family: "Almarai", sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-}
 
 
 
@@ -55,8 +47,8 @@
 
 .description{
     margin-top: 20px;
-    /*border: 1px solid blue;*/
-    width: 55vw;
+   /* border: 1px solid blue;*/
+    width: 100vw;
    display: flex;
     justify-content: center;
 }
@@ -68,7 +60,9 @@
     margin: 10px;
     line-height: 1.8;
     width: 48vw;
-   /* border: 1px solid deeppink;*/
+ /*   border: 1px solid deeppink;*/
+    font-family: "Almarai", sans-serif;
+    color: white;
 }
 
 
@@ -132,4 +126,18 @@
 .author{
     background-color: #0F0F0F;
     padding: 10px;
+}
+
+
+
+@media all and (max-width: 426px){
+
+    .textField{
+        width: 65vw!important;
+    }
+
+    .description p{
+        width: 78vw!important;
+    }
+
 }

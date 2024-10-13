@@ -161,6 +161,12 @@
 }
 
 
+@media all and (max-width: 1024px){
+    .e-card div{
+        width: 452px;
+    }
+}
+
 
 @media all and (max-width: 768px){
     #education-journey{
