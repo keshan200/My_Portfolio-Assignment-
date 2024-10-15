@@ -53,6 +53,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 
 
+
+
+
     <style>
 
         body{
@@ -261,17 +264,17 @@
 
             <!--Text-->
               <div class="di">
-                <h5  id="first">Hi there</h5>
-                <h6 id="sec">I'm Keshan Silva</h6>
-                <h5 id="thir">Software Engineer-Fullstack</h5>
+                  <h5 id="first"><span id="typed-hi"></span></h5>
+                  <h6 id="sec"> I'm <span id="typed-name"></span></h6>
+                  <h5 id="thir"><span id="typed-role"></span></h5>
                 <br>
-                <h3 id="four">i am undergraduate Software engineer .<br>based in Sri Lanka</h3>
+                <h3 id="four"  data-aos="zoom-in-down">i am undergraduate Software engineer .<br>based in Sri Lanka</h3>
               </div>
 
             <!--buttons-->
             <div class="btn">
-                <button id="cv_btn">Download CV</button>
-                <button class=" animate__animated animate__bounce" id="hire_btn">Hire me</button>
+                <button id="cv_btn" data-aos="zoom-in-down">Download CV</button>
+                <button class=" animate__animated animate__bounce" id="hire_btn" data-aos="zoom-in-down">Hire me</button>
             </div>
         </section>
 
@@ -284,7 +287,7 @@
 <main id="about-me">
 
     <!--Title-->
-    <div class="title">
+    <div class="title"  data-aos="zoom-in">
         <p>About Me</p>
     </div>
 
@@ -293,18 +296,19 @@
     <main class="main">
 
         <!--My image-->
-        <div class="im">
+        <div class="im" data-aos="zoom-out-right">
         <img class="myimg" src="assets/images/my_image_2.png" alt="Keshan" title="My_Photo">
         </div>
+
         <!--my Details-->
-        <section class="details_sec" >
-            <p  id="details" >I am passionate abotut using technology to solve complex problems and make a positive impact on the world. So currently I am Studying Software Engineering at IJSE-Institute of Software Engineering.<br><br> AS a Creative problerm Solver and team player, I am committed to delivering high - quality work and exceeding exceptation. I am eager to connect woth other technology professionals and explore new opportunities for growth and development. </p>
+        <section class="details_sec"  data-aos="zoom-in" >
+            <p id="details"></p>
         </section>
 
     </main>
 
     <!--Socail Meadia Navigation-->
-        <nav class="Social_meadias">
+        <nav class="Social_meadias" >
             <a href="https://www.linkedin.com/in/keshan-silva-104b6a2a9/"><img src="assets/icons/Linkdin-green.png" title="linkdin" alt="Linkdin"></a>
             <a href="https://www.facebook.com/sachintha.keshan.24/"><img src="assets/icons/facebook-green.png" title="Facebook" alt="Facebook"></a>
             <a href="https://www.instagram.com/"><img src="assets/icons/instergram-green.png" title="instergram" alt="Intergram"></a>
@@ -331,7 +335,7 @@
     <section  class="education_sec">
 
         <!--Ijse-->
-        <div class="e-card">
+        <div class="e-card" data-aos="zoom-out">
             <div>
                 <p class="date">2023-Present</p>
                 <p class="course">Graduate Diploma in Software Engineering</p>
@@ -342,7 +346,7 @@
 
 
         <!--Sliit-->
-        <div class="e-card">
+        <div class="e-card" data-aos="zoom-out">
             <div class="">
                 <p class="date">2023-Present</p>
                 <p class="course">Certificate Course in AI/ML Engineering</p>
@@ -469,9 +473,6 @@
 </main>
 
 
-
-
-
 <!--Assigments page-->
 <main id="assimet-page">
 
@@ -592,7 +593,6 @@
 </main>
 
 
-
 <!--Contact Page-->
 <main id="contact-page">
 
@@ -659,15 +659,22 @@
 
 
 
+
+
 <!--menu icon for tab and mobile sizes-->
 <script src="assets/js/menu-icon.js"></script>
 
 <!--Background dot flying-->
 <script src="assets/js/dot-flying.js"></script>
 
+<!--name & role typing Home Page-->
+<script src="assets/js/typing-anime.js"></script>
 
-<!--smtp-->
-
+<!--AOS Animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 

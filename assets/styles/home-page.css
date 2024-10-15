@@ -113,6 +113,7 @@ nav{
             1px -1px 0 lawngreen,   /* Top-right shadow */
             -1px 1px 0 lawngreen,   /* Bottom-left shadow */
             1px 1px 0 lawngreen;    /* Bottom-right shadow */
+    animation: blink-caret 0.7s step-end infinite;
 }
 
 
@@ -198,4 +199,39 @@ nav{
 /* When the sidebar is open */
 .sidebar.open {
     width: 250px;
+}
+
+
+
+
+
+/*typing animations*/
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: limegreen;
+    }
+}
+
+/* Typing effect for #first, #sec, #thir */
+#first, #sec, #thir {
+    white-space: nowrap; /* Prevents line breaking */
+    overflow: hidden;
+    animation: blink-caret 0.7s step-end infinite;
+
+}
+
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: limegreen;
+    }
 }
