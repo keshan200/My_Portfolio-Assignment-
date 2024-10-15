@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+/*about me para typing anime*/
+
+/*
 const text = "I am passionate about using technology to solve complex problems and make a positive impact on the world. So currently I am studying Software Engineering at IJSE-Institute of Software Engineering. As a creative problem solver and team player, I am committed to delivering high-quality work and exceeding expectations. I am eager to connect with other technology professionals and explore new opportunities for growth and development.";
 const detailsElement = document.getElementById('details');
 let index = 0;
@@ -76,4 +79,4 @@ function typeText() {
 // Start typing after the page loads
 window.onload = () => {
     typeText();
-};
+};*/
