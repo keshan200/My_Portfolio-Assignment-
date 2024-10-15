@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="assets/styles/service-page.css">
     <link rel="stylesheet" href="assets/styles/contact-page.css">
 
-
+    <link rel="stylesheet" href="assets/styles/test.css">
 
 
 
@@ -587,6 +587,10 @@
                 <img  src="assets/images/header_logo.png">
             </div>
 
+
+            <!-- Menu Icon for Mobile/Tablet -->
+            <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+
             <!--Home page Navigation-->
             <nav>
                 <ul class="NavigtionLink">
@@ -600,6 +604,19 @@
                     <li><a>Contact me</a></li>
                 </ul>
             </nav>
+
+            <!-- Sidebar Navigation for Mobile/Tablet -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+                <a href="#Home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#tools">Tools</a>
+                <a href="#projects">Projects</a>
+                <a href="#assignments">Assignments</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Me</a>
+            </div>
 
         </section>
     </header>
@@ -797,7 +814,7 @@
         <p>Projects</p>
     </div>
 
-    <!--projects-->
+    projects
     <main class="project-sec">
         <!--project 1-->
         <section class="p-card">
@@ -822,11 +839,11 @@
             <p>lorem..............</p>
             <a href=""><img src=""></a>
         </section>
+</main>
+</main>
 
-    </main>
 
 
-</main>   <!--incomplete yet-->
 
 
 <!--Assigments page-->
@@ -1010,6 +1027,16 @@
 
 </main>
 
+
+
+<!--menu icon for tab and mobile sizes-->
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("open");
+    }
+
+</script>
 
 </body>
 

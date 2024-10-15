@@ -63,28 +63,28 @@
 
 
 
- @media all and (max-width:768px){
+ @media all and (max-width:768px) {
 
-     .NavigtionLink li a{
+     .NavigtionLink li a {
          display: none;
      }
 
-     .MyImg img{
+     .MyImg img {
          width: 333px !important;
      }
 
 
-     .Home-Page-Content{
+     .Home-Page-Content {
          padding: 0;
 
 
          position: relative;
-         top: 100px!important;
+         top: 100px !important;
      }
 
      .nameposition {
-         padding: 0!important;
-         padding-top: 37px!important;
+         padding: 0 !important;
+         padding-top: 37px !important;
          position: relative;
          left: -29px;
 
@@ -94,37 +94,51 @@
          font-size: 1.5em !important;
      }
 
-     #sec{
-         font-size: 3.4rem!important;
+     #sec {
+         font-size: 3.4rem !important;
 
      }
 
-     #thir{
-         font-size: 2em!important;
+     #thir {
+         font-size: 2em !important;
          text-align: center;
 
      }
 
-     #four{
-         font-size: 1em!important;
+     #four {
+         font-size: 1em !important;
 
      }
 
-     .btn{
+     .btn {
          display: grid;
          justify-content: center;
      }
 
-     #hire_btn{
+     #hire_btn {
          margin-top: 19px;
      }
 
-     #cv_btn{
-         margin: 0!important;
+     #cv_btn {
+         margin: 0 !important;
      }
 
 
+     /*dksfalkd*/
+     nav {
+         display: none;
+     }
+
+     .menu-icon {
+         display: block;
+         color: lime;
+         font-size: 30px;
+         cursor: pointer;
+     }
  }
+
+
+
 
 
 
