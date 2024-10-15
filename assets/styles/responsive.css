@@ -124,7 +124,6 @@
      }
 
 
-     /*dksfalkd*/
      nav {
          display: none;
      }
@@ -132,7 +131,7 @@
      .menu-icon {
          display: block;
          color: lime;
-         font-size: 30px;
+         font-size: 40px;
          cursor: pointer;
      }
  }
