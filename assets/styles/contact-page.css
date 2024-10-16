@@ -1,9 +1,9 @@
 #contact-page{
-    background-color: transparent;
+    background-color: black;
     width: 100vw;
     height: auto;
     position: relative;
-    top: 600px;
+    top: 445px;
 
 
     display: flex;
@@ -129,6 +129,12 @@
 }
 
 
+
+@media all and (max-width: 1024px){
+    #contact-page{
+        top: 500px!important;
+    }
+}
 
 @media all and (max-width: 426px){
 

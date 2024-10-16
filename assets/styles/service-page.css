@@ -2,7 +2,7 @@
     width: 100vw;
     height: auto;
     position: relative;
-    top: 500px;
+    top: 370px;
     background-color: #0F0F0F;
    padding-top: 40px;
     padding-bottom: 40px;
@@ -113,6 +113,11 @@
 
     .s-icon{
         width: 55px;
+    }
+
+    #service-page{
+        padding-top: 20px;
+        top: 500px!important;
     }
 }
 

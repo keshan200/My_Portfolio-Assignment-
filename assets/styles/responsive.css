@@ -36,6 +36,7 @@
 
      .nameposition{
          padding-right: 8px!important;
+         margin-top: 20px;
      }
 
 
@@ -44,17 +45,23 @@
      }
 
      #first{
-         transform: translateX(-10em)!important;
+         transform: translateX(-13em)!important;
+         font-size: 1.5rem!important;
      }
 
      #sec{
-         font-size: 5em!important;
+         font-size: 4.8em!important;
      }
 
      #thir{
-         font-size: 3em!important;
+         font-size: 2.8em!important;
      }
 
+
+     #four{
+         font-size: 1.2rem!important;
+         margin-top: 0!important;
+     }
 }
 
 
@@ -79,7 +86,7 @@
 
 
          position: relative;
-         top: 100px !important;
+         top: 70px !important;
      }
 
      .nameposition {
@@ -92,6 +99,7 @@
 
      #first {
          font-size: 1.5em !important;
+         transform: translateX(-9em)!important;
      }
 
      #sec {
@@ -107,12 +115,20 @@
 
      #four {
          font-size: 1em !important;
+         position: relative;
+         top: -18px;
+
 
      }
 
      .btn {
          display: grid;
          justify-content: center;
+   margin-top: 0!important;
+     }
+
+     .btn button{
+         width: 132px !important;
      }
 
      #hire_btn {
@@ -161,6 +177,7 @@
          position: relative;
          left: 0;
          width: 100vw!important;
+         padding: 0 !important;
 
      }
 
@@ -175,7 +192,7 @@
 
 
      #first{
-         transform: translate(-5em, -17em)!important;
+         transform: translate(-5em, -15em)!important;
      }
 
      #sec {
@@ -184,10 +201,12 @@
 
      #thir {
          font-size: 1.8em !important;
+
      }
 
      #four{
          text-align: center;
+         margin: 0;
      }
 
      #cv_btn{
@@ -199,7 +218,7 @@
     }
 
 
-  @media all and (max-width:376px){
+  @media all and (max-width:375px){
 
 
  }
@@ -214,7 +233,12 @@
        /* width: 318px;*/
         margin: 0 auto;
         display: block;
+
     }
+
+      .Home-Page-Content{
+          transform: translateY(4em)!important;
+      }
 
       #Home{
         background-color: orange;

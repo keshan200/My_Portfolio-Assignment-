@@ -1,9 +1,9 @@
 #language-tools{
     height: auto;
     width: 100vw;
-    background-color: transparent;
+    background-color: black;
     position: relative;
-    top: 121px;
+    top: 130px;
 }
 
 
@@ -102,11 +102,21 @@
         width: 57px !important;
         border-radius: 26px;
     }
+
+    #language-tools{
+        position: relative;
+        top: 300px!important;
+    }
 }
 
 @media all and (max-width: 768px ){
     .icons img{
+
         margin: 34px!important;
+    }
+    #language-tools{
+        position: relative!important;
+        top: 266px!important;
     }
 }
 
@@ -118,6 +128,11 @@
 
     .count-projects div{
         gap: 20px;
+    }
+
+    #language-tools{
+        position: relative!important;
+        top: 266px!important;
     }
 }
 
@@ -141,6 +156,11 @@
 
     .count-projects div{
         gap: 13px!important;
+    }
+
+    #language-tools{
+        position: relative;
+        top: 80px !important;
     }
 }
 

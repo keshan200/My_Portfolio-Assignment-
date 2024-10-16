@@ -2,7 +2,7 @@
 #education-journey{
     height: auto;
     width: 100vw;
-    background-color: transparent;
+    background-color: black;
     position: relative;
     /*border: 1px solid deeppink;*/
     display: flex;
@@ -10,7 +10,7 @@
     flex-direction: row;
 
 
-    top: 63px;
+    top: 54px;
 
 
 }
@@ -163,7 +163,12 @@
 
 @media all and (max-width: 1024px){
     .e-card div{
-        width: 452px;
+        width: 424px;
+    }
+
+    #education-journey{
+        position: relative;
+        top: 244px!important;
     }
 }
 
@@ -173,6 +178,7 @@
         display: flex!important;
         flex-direction: column!important;
         width: 100vw!important;
+        top: 150px;
     }
 
     .education_sec{
@@ -201,6 +207,10 @@
     .e-card div{
         width: 327px;
     }
+
+    #education-journey{
+        top:150px!important;
+    }
 }
 
 
@@ -215,5 +225,10 @@
 @media all and (max-width: 320px){
     .e-card div{
         width: 237px;
+    }
+
+    #education-journey{
+        position: relative;
+        top: 20px !important;
     }
 }

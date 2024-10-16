@@ -4,7 +4,7 @@
     height: auto;
     position: relative;
     top: 200px;
-    background-color: transparent;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +77,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 15px 0;
+    margin: 30px 0;
 }
 
 /*github btn*/
@@ -109,16 +109,6 @@
 }
 
 
-.github-button:hover {
-    background-color: #99ff99;
-    transform: translateY(-10px);
-}
-
-.github-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
 
 /* Scroll Buttons */
 .btn-scrol {
@@ -146,49 +136,75 @@
     background-color: darkgreen;
 }
 
-.p-card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
 
-/* New Content Styles */
+/* Default state: Hide the new content */
 .new-content-p {
+    color: ghostwhite;
+    font-family:"Arvo", serif;
+    transform: translateY(100px);
     opacity: 0;
-   /* border: 1px solid lime;*/
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
     visibility: hidden;
-    color: #e6e6e6;
-    margin-top: 10px;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
 }
 
-.p-card:hover .new-content-p {
-    opacity: 1;
-    visibility: visible;
-    margin-top: 15px;
-}
-
+/* On hover, hide the Title, image, and GitHub button */
 .p-card:hover .Title,
 .p-card:hover img,
 .p-card:hover .github-button {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
 }
 
+/* On hover, show the new content */
+.p-card:hover .new-content-p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-300px);
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
 
-@media all and (max-width: 1024px){
-    .project-sec{
-        width: 95vw!important;
+/* Ensure the .p-card has a hover effect */
+.p-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.p-card:hover {
+    transform: scale(1.05); /* Slight scale-up effect */
+    box-shadow: 0 4px 8px lime; /* Change shadow on hover */
+}
+
+@media all and (max-width: 1024px) {
+
+    .github-button{
+        margin-top: 0;
     }
 
-    .p-card{
-        height:340px;
+
+    .project-sec {
+        width: 95vw !important;
+    }
+
+    .p-card {
+        height: 340px;
         min-width: 245px;
     }
 
-    .btn-scrol{
+    .btn-scrol {
         position: relative;
-        top: 80px;
+        top: 42px;
+    }
+
+    #project-page {
+        position: relative;
+        top: 350px;
+    }
+
+    .p-card:hover .new-content-p {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-335px);
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
     }
 }
 
@@ -224,6 +240,8 @@
         font-size: 1rem;
         padding: 8px 16px;
     }
+
+
 }
 
 
@@ -231,5 +249,10 @@
 
     .new-content-p{
         font-size: 0.8rem ;
+    }
+
+    #project-page{
+        position: relative;
+        top: 150px !important;
     }
 }

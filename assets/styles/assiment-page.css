@@ -1,11 +1,11 @@
 #assimet-page{
 
     position: relative;
-    top: 400px;
+    top: 283px;
     width: 100vw;
     height: auto;
 
-    background-color: transparent;
+    background-color: black;
 }
 
 
@@ -30,16 +30,49 @@
     border-radius: 20px;
     width: 320px ;
     height: 200px;
-    color:#0F0F0F ;
-
+    color:lime;
 }
 
+.case{
+    font-weight: bolder;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.7rem;
+    margin: 0;
+    text-align: left;
+}
+
+
+.about{
+    font-weight: bold;
+    font-family: "Almarai", sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+    text-align: left;
+    color: #666666;
+    position: relative;
+    top: 27px;
+}
+
+
+.img-sec{
+    position: relative;
+    top: 60px;
+    display: flex;
+    gap: 27px;
+    justify-content: right;
+}
+
+.img-sec img{
+    width: 45px;
+    height: auto;
+}
 
 
 .assigment-card:hover {
 
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px white;
     transition: color 1s;
-
 }
 
 
@@ -51,6 +84,12 @@
     .assigment-card{
         width: 280px;
         height: 174px;
+    }
+
+    #assimet-page {
+
+        position: relative !important;
+        top: 453px !important;
     }
 }
 
