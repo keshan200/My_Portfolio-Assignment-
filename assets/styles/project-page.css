@@ -16,8 +16,6 @@
 .project-sec {
     display: flex;
     justify-content: center;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
     width: 80vw;
