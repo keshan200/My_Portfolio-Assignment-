@@ -124,7 +124,7 @@
 .btn-scrol {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-top: 58px;
 
 
 }
@@ -176,6 +176,24 @@
 }
 
 
+@media all and (max-width: 1024px){
+    .project-sec{
+        width: 95vw!important;
+    }
+
+    .p-card{
+        height:340px;
+        min-width: 245px;
+    }
+
+    .btn-scrol{
+        position: relative;
+        top: 80px;
+    }
+}
+
+
+
 /* Responsive Styles */
 @media all and (max-width: 768px) {
 
@@ -205,5 +223,13 @@
     .scroll-btn {
         font-size: 1rem;
         padding: 8px 16px;
+    }
+}
+
+
+@media all and (max-width: 375px){
+
+    .new-content-p{
+        font-size: 0.8rem ;
     }
 }
