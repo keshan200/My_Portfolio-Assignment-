@@ -14,6 +14,9 @@
 
 /* Projects Scroll Section */
 .project-sec {
+
+    position: relative;
+    top: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -45,6 +48,17 @@
 
 }
 
+
+.content{
+
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .p-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px lime;
@@ -56,6 +70,7 @@
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    margin: 0;
 }
 
 .p-card img {
@@ -110,6 +125,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+
+
 }
 
 .scroll-btn {
@@ -136,8 +153,10 @@
 /* New Content Styles */
 .new-content-p {
     opacity: 0;
-    border: 1px solid lime;
-    border-radius: 20px;
+   /* border: 1px solid lime;*/
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
     visibility: hidden;
     color: #e6e6e6;
     margin-top: 10px;
@@ -159,24 +178,24 @@
 
 /* Responsive Styles */
 @media all and (max-width: 768px) {
-    .title p {
-        font-size: 2rem;
-    }
+
 
     .p-card {
         min-width: 250px;
-        height: 350px;
+        height: 380px;
     }
 
     .scroll-btn {
         font-size: 1.2rem;
     }
+
+    .btn-scrol{
+        position: relative;
+        top: 80px;
+    }
 }
 
 @media all and (max-width: 425px) {
-    .title p {
-        font-size: 1.5rem;
-    }
 
     .p-card {
         min-width: 200px;
