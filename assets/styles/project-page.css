@@ -15,11 +15,13 @@
 /* Projects Scroll Section */
 .project-sec {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
     width: 80vw;
     padding: 20px 0;
+    scroll-snap-type: x mandatory;
 }
 
 .project-sec::-webkit-scrollbar {
@@ -28,8 +30,8 @@
 
 /* Project Card Styles */
 .p-card {
-    scroll-snap-align: center;
-   width: 281px;
+   /* scroll-snap-align: center;*/
+     width: 281px;
     height: 383px;
     background-color: black;
     border-radius: 15px;
