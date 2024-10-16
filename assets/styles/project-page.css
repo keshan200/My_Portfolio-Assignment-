@@ -16,6 +16,7 @@
 .project-sec {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -30,7 +31,7 @@
 
 /* Project Card Styles */
 .p-card {
-   /* scroll-snap-align: center;*/
+    scroll-snap-align: center;
      width: 281px;
     height: 383px;
     background-color: black;
