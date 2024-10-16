@@ -121,6 +121,8 @@ nav{
     font-size: 3.6rem;
     color: whitesmoke;
     margin: 0;
+    animation: blink-caret 0.7s step-end infinite;
+    height: 60px;
 }
 
 
@@ -204,34 +206,8 @@ nav{
 
 
 
-
-/*typing animations*/
-
-/* Cursor blink animation */
+/* Keyframes for blinking caret */
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: limegreen;
-    }
-}
-
-/* Typing effect for #first, #sec, #thir */
-#first, #sec, #thir {
-    white-space: nowrap; /* Prevents line breaking */
-    overflow: hidden;
-    animation: blink-caret 0.7s step-end infinite;
-
-}
-
-
-/* Cursor blink animation */
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: limegreen;
-    }
+    from, to { border-color: transparent; }
+    50% { border-color: lime; }
 }

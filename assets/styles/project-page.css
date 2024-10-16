@@ -4,4 +4,75 @@
     width: 100vw;
     height: auto;
     background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.project-sec {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 50vw;
+    height: auto;
+    align-items: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.project-sec::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card Styles */
+.p-card {
+    min-width: 300px;
+    height: 100%;
+    background-color: black;
+    border: 2px solid lime;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+    position: relative;
+    margin: 0 20px;
+}
+
+.p-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.zoomed {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+/* Buttons */
+.btn-scrol {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.scroll-btn {
+    padding: 10px 20px;
+    background-color: lime;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: darkgreen;
 }
