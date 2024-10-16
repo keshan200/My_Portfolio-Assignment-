@@ -1,78 +1,189 @@
-#project-page{
-    position: relative;
-    top: 300px;
+/* Project Page */
+#project-page {
     width: 100vw;
     height: auto;
-    background-color: black;
-
+    position: relative;
+    top: 200px;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 
-
+/* Projects Scroll Section */
 .project-sec {
     display: flex;
+    justify-content: center;
+    scroll-snap-type: x mandatory;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
-    width: 50vw;
-    height: auto;
-    align-items: center;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    width: 80vw;
+    padding: 20px 0;
 }
 
 .project-sec::-webkit-scrollbar {
     display: none;
 }
 
-/* Card Styles */
+/* Project Card Styles */
 .p-card {
-    min-width: 300px;
-    height: 100%;
+    scroll-snap-align: center;
+   width: 281px;
+    height: 383px;
     background-color: black;
-    border: 2px solid lime;
-    border-radius: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px white;
+    margin: 0 50px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.5s ease;
-    position: relative;
-    margin: 0 20px;
+    border: 1px solid lime;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.p-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px lime;
+}
+
+
+.Title{
+    color: lime;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
 }
 
 .p-card img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
-.zoomed {
-    transform: scale(1.2);
-    z-index: 1;
+/*github btn*/
+.github-button {
+    background-color: lime;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Almarai', sans-serif;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    margin-top: 30px;
 }
 
-/* Buttons */
+
+.github-button2 {
+    background-color: lime;
+    color: #222;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Almarai', sans-serif;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    margin-top: 30px;
+}
+
+
+.github-button:hover {
+    background-color: #99ff99;
+    transform: translateY(-10px);
+}
+
+.github-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Scroll Buttons */
 .btn-scrol {
-    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .scroll-btn {
     padding: 10px 20px;
     background-color: lime;
-    border: none;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    border: none;
+    text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s;
+    margin: 0 10px;
 }
 
 .scroll-btn:hover {
     background-color: darkgreen;
+}
+
+.p-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* New Content Styles */
+.new-content-p {
+    opacity: 0;
+    border: 1px solid lime;
+    border-radius: 20px;
+    visibility: hidden;
+    color: #e6e6e6;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.p-card:hover .new-content-p {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 15px;
+}
+
+.p-card:hover .Title,
+.p-card:hover img,
+.p-card:hover .github-button {
+    display: none;
+}
+
+
+/* Responsive Styles */
+@media all and (max-width: 768px) {
+    .title p {
+        font-size: 2rem;
+    }
+
+    .p-card {
+        min-width: 250px;
+        height: 350px;
+    }
+
+    .scroll-btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .title p {
+        font-size: 1.5rem;
+    }
+
+    .p-card {
+        min-width: 200px;
+        height: 300px;
+    }
+
+    .scroll-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }

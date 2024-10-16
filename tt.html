@@ -91,238 +91,104 @@
     </style>-->
 
 <style>
-    /* General Styles */
     body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-        background-color: black;
-        color: white;
-        display: flex;
-        justify-content: center; /* Center the main container */
-        align-items: center;
-        height: 100vh; /* Full height for centering */
+        font-family: 'Arial', sans-serif;
+        background-color: #1a1a1a; /* Dark black background */
     }
 
-    #project-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title p {
-        font-size: 2rem;
-        text-align: center;
-        color: lime;
-        margin-bottom: 20px;
-    }
-
-    /* Scroll Section Styles */
-    .project-sec {
-        display: flex; /* Flexbox for a single row */
-        overflow-x: auto; /* Allow horizontal scrolling */
-        scroll-behavior: smooth; /* Smooth scrolling effect */
-        width: 80vw; /* Fixed width */
-        height: 400px; /* Fixed height */
-        align-items: center; /* Center items vertically */
-        scrollbar-width: none; /* For Firefox */
-        -ms-overflow-style: none; /* For Internet Explorer and Edge */
-    }
-
-    .project-sec::-webkit-scrollbar {
-        display: none; /* For Chrome, Safari, and Opera */
-    }
-
-    /* Card Styles */
-    .p-card {
-        min-width: 300px; /* Base width for cards */
-        height: 100%; /* Full height of container */
-        background-color: black;
-        border: 2px solid lime;
-        border-radius: 20px;
-        padding: 20px;
-        text-align: center;
-        transition: transform 0.5s ease; /* Transition for scaling */
-        position: relative; /* For absolute positioning of child elements */
-        margin: 0 20px; /* Margin for spacing between cards */
-    }
-
-    .p-card img {
-        max-width: 100%;
-        height: auto;
+    .project-card {
+        width: 300px;
+        background-color: #222; /* Card black background */
         border-radius: 10px;
-        margin: 10px 0;
+        overflow: hidden;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
     }
 
-    .zoomed {
-        transform: scale(1.2); /* Zoom effect */
-        z-index: 1; /* Bring zoomed card above others */
+    .project-card:hover {
+        transform: scale(1.05);
     }
 
-    /* Buttons */
-    .btn-scrol {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 200px;
+    .card-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
 
-    .scroll-btn {
-        padding: 10px 20px;
+    .card-content {
+        padding: 20px;
+        color: #e6e6e6; /* Light gray text for contrast */
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: lime;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        color: #b3b3b3; /* Light gray for description */
+    }
+
+    .project-link {
+        display: inline-block;
+        padding: 10px 15px;
         background-color: lime;
-        border: none;
-        color: black;
-        font-size: 1.2rem;
-        cursor: pointer;
+        color: #222;
+        text-decoration: none;
         border-radius: 5px;
-        transition: background-color 0.3s;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
     }
 
-    .scroll-btn:hover {
-        background-color: darkgreen;
+    .project-link:hover {
+        background-color: #99ff99;
+    }
+
+
+
+
+    .github-button {
+        background-color: lime;
+        color: #222;
+        font-size: 1rem;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+        font-weight: bold;
+    }
+
+    .github-button:hover {
+        background-color: #99ff99;
+        transform: translateY(-2px);
+    }
+
+    .github-button:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
 
 </style>
 </head>
 <body>
-
-<main id="project-page">
-    <!-- Title -->
-    <div class="title">
-        <p>Projects</p>
+<div class="project-card">
+    <div class="card-image">
+        <img src="project-image.jpg" alt="Project Image">
     </div>
-
-    <!-- Projects Scroll Section -->
-    <section class="project-sec">
-        <!-- Project 1 -->
-        <section class="p-card">
-            <p>Project 1 Description...</p>
-            <img src="assets/project1.jpg" alt="Project 1 Image">
-            <p>Details about project 1...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 2 -->
-        <section class="p-card">
-            <p>Project 2 Description...</p>
-            <img src="assets/project2.jpg" alt="Project 2 Image">
-            <p>Details about project 2...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 3 -->
-        <section class="p-card">
-            <p>Project 3 Description...</p>
-            <img src="assets/project3.jpg" alt="Project 3 Image">
-            <p>Details about project 3...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 4 -->
-        <section class="p-card">
-            <p>Project 4 Description...</p>
-            <img src="assets/project4.jpg" alt="Project 4 Image">
-            <p>Details about project 4...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 5 -->
-        <section class="p-card">
-            <p>Project 5 Description...</p>
-            <img src="assets/project5.jpg" alt="Project 5 Image">
-            <p>Details about project 5...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 6 -->
-        <section class="p-card">
-            <p>Project 6 Description...</p>
-            <img src="assets/project6.jpg" alt="Project 6 Image">
-            <p>Details about project 6...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 7 -->
-        <section class="p-card">
-            <p>Project 7 Description...</p>
-            <img src="assets/project7.jpg" alt="Project 7 Image">
-            <p>Details about project 7...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 8 -->
-        <section class="p-card">
-            <p>Project 8 Description...</p>
-            <img src="assets/project8.jpg" alt="Project 8 Image">
-            <p>Details about project 8...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 9 -->
-        <section class="p-card">
-            <p>Project 9 Description...</p>
-            <img src="assets/project9.jpg" alt="Project 9 Image">
-            <p>Details about project 9...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-
-        <!-- Project 10 -->
-        <section class="p-card">
-            <p>Project 10 Description...</p>
-            <img src="assets/project10.jpg" alt="Project 10 Image">
-            <p>Details about project 10...</p>
-            <a href="#"><img src="assets/github.png" alt="GitHub Icon"></a>
-        </section>
-    </section>
-
-    <div class="btn-scrol">
-        <!-- Scroll Left Button -->
-        <button class="scroll-btn" onclick="scrollPrev()">&#9664;</button>
-        <!-- Scroll Right Button -->
-        <button class="scroll-btn" onclick="scrollNext()">&#9654;</button>
+    <div class="card-content">
+        <h2 class="project-title">Project Title</h2>
+        <p class="project-description">A brief description of the project goes here. Keep it short and engaging.</p>
+        <a href="#" class="project-link">View Project</a>
     </div>
-</main>
+</div>
 
-<script>
-    let projectSection = document.querySelector('.project-sec');
-    let cards = document.querySelectorAll('.p-card');
-    let currentIndex = 0;
+<button class="github-button">View Via GitHub</button>
 
-    function updateCardEffects() {
-        // Remove zoom effects from all cards
-        cards.forEach(card => {
-            card.classList.remove('zoomed');
-        });
 
-        // Add zoom effect to the current card
-        cards[currentIndex].classList.add('zoomed');
-
-        // Center the current card in the viewport
-        const cardWidth = cards[currentIndex].offsetWidth;
-        const scrollOffset = (cardWidth + 30) * currentIndex - (projectSection.offsetWidth / 2) + (cardWidth / 2);
-        projectSection.scrollTo({
-            left: scrollOffset,
-            behavior: 'smooth'
-        });
-    }
-
-    function scrollNext() {
-        if (currentIndex < cards.length - 1) {
-            currentIndex++;
-            updateCardEffects();
-        }
-    }
-
-    function scrollPrev() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCardEffects();
-        }
-    }
-
-    // Initialize with the first card zoomed
-    updateCardEffects();
-</script>
 
 </body>
 </html>
