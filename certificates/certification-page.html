@@ -1,0 +1,611 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Certificates</title>
+  <link id="f" rel="icon" type="image/x-icon" href="../assets/icons/header_logo1.png" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to my portfolio! I'm Keshan Silva, a passionate software engineer specializing in web development and AI/ML. Explore my projects and learn more about my skills and experience in creating innovative solutions tailored to meet business needs.">
+  <meta name="keywords" content="html, css, javaScript">
+  <meta name="author" content="Keshan Silva">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ &lt;!&ndash; <style>
+
+    body {
+      background-color: black;
+   overflow-x: hidden;
+      margin: 0;
+
+    }
+
+    .section {
+     display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      gap: 97px;
+      padding: 50px;
+
+      position: relative;
+      top: 150px;
+    }
+
+    .certificate-container {
+      overflow: hidden;
+    }
+
+    .certificate {
+      width: 387px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+
+    .new{
+      width: 390px;
+      height: 300px;
+      border: 2px solid lime;
+      background-color: black;
+      border-radius: 30px;
+
+      justify-content: center;
+      align-items: center;
+
+     display: none;
+    }
+
+
+    .view-button{
+
+
+      width: 150px;
+      height: 50px;
+      background-color: lime;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: "Almarai", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+
+
+
+    .certificate-container:hover .new {
+      visibility: visible;
+      transform: translateY(-309px);
+    }
+
+
+
+    .headerbar{
+      background-color: black;
+      width: 100vw;
+      max-height: 12vh;
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 2px solid lime;
+      box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+      z-index: 999!important;
+
+    }
+
+    nav{
+      width: 58em ;
+      margin-right: 1em ;
+    }
+
+    .logo img{
+      max-width: 212px;
+      height: auto;
+      border-radius: 50px;
+    }
+
+    .NavigtionLink{
+      list-style: none;
+      display: flex;
+    }
+
+    .NavigtionLink li a{
+      font-size: 1.2rem;
+      font-weight: normal;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      margin-right: 25px;
+      text-decoration: none;
+
+    }
+
+
+
+
+
+  </style>&ndash;&gt;
+
+  <style>
+    body {
+      background-color: gray;
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+
+    #certificate-page{
+      width: 100vw;
+      height: auto;
+      background-color: black;
+    }
+
+    .section {
+      display: grid;
+      width: 100vw;
+
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+      gap: 50px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin:auto;
+      top: 150px;
+      border: 1px solid red;
+    }
+
+    .certificate-container {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 15px;
+    }
+
+    .certificate {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease;
+      border-radius: 15px;
+    }
+
+    .new {
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      transition: top 0.4s ease;
+      opacity: 0;
+    }
+
+    .view-button {
+      width: 150px;
+      height: 50px;
+      background-color: lime;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: "Almarai", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover bbbb*/
+    .certificate-container:hover .certificate {
+      transform: scale(1.1); /* Slight zoom */
+    }
+
+    .certificate-container:hover .new {
+      top: 0; /* Slide up from the bottom */
+      opacity: 1;
+
+    }
+
+    .certificate-container:hover .view-button {
+      transform: translateY(10px);
+    }
+
+    .headerbar {
+      background-color: black;
+      width: 100vw;
+      max-height: 12vh;
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid lime;
+      box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+      z-index: 999!important;
+    }
+
+    nav {
+      width: 58em;
+      margin-right: 1em;
+    }
+
+    .logo img {
+      max-width: 212px;
+      height: auto;
+      border-radius: 50px;
+    }
+
+    .NavigtionLink {
+      list-style: none;
+      display: flex;
+    }
+
+    .NavigtionLink li a {
+      font-size: 1.2rem;
+      font-weight: normal;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      margin-right: 25px;
+      text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media all and (max-width: 1024px) {
+
+      .section {
+
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+      <main id="certificate-page">
+          &lt;!&ndash;header Section&ndash;&gt;
+           <header>
+
+  &lt;!&ndash;navigate section &ndash;&gt;
+  <section class="headerbar">
+
+    &lt;!&ndash;navigate section img&ndash;&gt;
+    <div class="logo">
+      <img  src="assets/images/header_logo.png">
+    </div>
+
+
+    &lt;!&ndash;Home page Navigation&ndash;&gt;
+    <nav>
+      <ul class="NavigtionLink">
+        <li><a href="#Home">Home</a></li>
+     &lt;!&ndash;   <li><a href="#about-me">About Me</a></li>
+        <li><a href="#education-journey">Education</a></li>
+        <li><a href="#language-tools">Tools</a></li>
+        <li><a href="#project-page">Projects</a></li>
+        <li><a href="#assimet-page">Assigment</a></li>
+        <li><a href="#service-page">Services</a></li>
+        <li><a href="#contact-page">Contact me</a></li>&ndash;&gt;
+      </ul>
+    </nav>
+
+  </section>
+</header>
+
+          <section class="section">
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/AI_ML Engineering Stage-1.png" alt="AI/ML Engineering Stage-1">
+
+    <div class="new">
+    <a href="#" class="view-button">View</a>
+    </div>
+
+  </div>
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/Python_for_Beginners_E-Certificate.jpg" alt="Python for Beginners E-Certificate">
+
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/Introduction to java.jpg" alt="Introduction to Java">
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/Introduction to Neural Network.jpg" alt="Introduction to Neural Network">
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/Introduction to SQL.jpg" alt="Introduction to SQL">
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/Java Intermediate.jpg" alt="Java Intermediate">
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/CertificateOfCompletion_What Is Generative AI 1.jpg" alt="Certificate of Completion - What Is Generative AI">
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+  <div class="certificate-container">
+    <img class="certificate" src="assets/certifications/SQL Intermediate.jpg" alt="SQL Intermediate">
+    <div class="new">
+      <a href="#" class="view-button">View</a>
+    </div>
+  </div>
+</section>
+
+      </main>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Certificates</title>
+  <link id="f" rel="icon" type="image/x-icon" href="../assets/icons/header_logo1.png" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to my portfolio! I'm Keshan Silva, a passionate software engineer specializing in web development and AI/ML. Explore my projects and learn more about my skills and experience in creating innovative solutions tailored to meet business needs.">
+  <meta name="keywords" content="html, css, javaScript">
+  <meta name="author" content="Keshan Silva">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      background-color:black; /* Light gray background */
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+    #certificate-page {
+      width: 100vw;
+      height: auto;
+      background-color: black;
+      position: relative;
+      top: 0;
+    }
+
+    .section {
+      display: grid;
+      width: 100vw;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+      gap: 50px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      top: 150px;
+    }
+
+    .certificate-container {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      padding: 28px;
+    }
+
+    .certificate {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease;
+      border-radius: 15px;
+    }
+
+    .new {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      transition: top 0.4s ease;
+      opacity: 0;
+    }
+
+    .view-button {
+      width: 150px;
+      height: 50px;
+      background-color: lime;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: "Almarai", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .certificate-container:hover .certificate {
+      transform: scale(1.1); /* Slight zoom */
+    }
+
+    .certificate-container:hover .new {
+      top: 0; /* Slide up from the bottom */
+      opacity: 1;
+    }
+
+    .certificate-container:hover .view-button {
+      transform: translateY(10px);
+    }
+
+    .headerbar {
+      background-color: black;
+      width: 100vw;
+      max-height: 12vh;
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid lime;
+      box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+      z-index: 999 !important;
+    }
+
+    nav {
+      width: 58em;
+      margin-right: 1em;
+    }
+
+    .logo img {
+      max-width: 212px;
+      height: auto;
+      border-radius: 50px;
+    }
+
+    .NavigtionLink {
+      list-style: none;
+      display: flex;
+    }
+
+    .NavigtionLink li a {
+      font-size: 1.2rem;
+      font-weight: normal;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      margin-right: 25px;
+      text-decoration: none;
+    }
+
+    @media all and (max-width: 1024px) {
+      .section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+
+    @media all and (max-width: 426px){
+
+      .section{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main id="certificate-page">
+  <!--header Section-->
+  <header>
+    <!--navigate section -->
+    <section class="headerbar">
+      <!--navigate section img-->
+      <div class="logo">
+        <img src="../assets/images/header_logo.png" alt="Logo">
+      </div>
+      <!--Home page Navigation-->
+      <nav>
+        <ul class="NavigtionLink">
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <section class="section">
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/AI_ML Engineering Stage-1.png" alt="AI/ML Engineering Stage-1">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/Python_for_Beginners_E-Certificate.jpg" alt="Python for Beginners E-Certificate">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/Introduction to java.jpg" alt="Introduction to Java">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/Introduction to Neural Network.jpg" alt="Introduction to Neural Network">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/Introduction%20to%20SQL.jpg" alt="Introduction to SQL">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/Java%20Intermediate.jpg" alt="Java Intermediate">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/CertificateOfCompletion_What%20Is%20Generative%20AI%201.jpg" alt="Certificate of Completion - What Is Generative AI">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+    <div class="certificate-container">
+      <img class="certificate" src="../assets/images/certifications/SQL%20Intermediate.jpg" alt="SQL Intermediate">
+      <div class="new">
+        <a href="#" class="view-button">View</a>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+</body>
+</html>

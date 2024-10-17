@@ -15,7 +15,12 @@ for (let i = 1; i <= dotCount; i++) {
     dot.style.transformOrigin = `${Math.random() * 20 - 10}px ${Math.random() * 20 - 10}px`; // Random origin for rotation
     dot.style.animation = `rotating ${15 + Math.random() * 20}s ease-in-out infinite`;
 
+
+
     dotWrapper.appendChild(dot);
     container.appendChild(dotWrapper);
 }
+
+
+
 */
