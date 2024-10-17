@@ -1,17 +1,14 @@
 
-
 #about-me{
     height: auto;
     width: 100vw;
-    top: 48px;
     background-color: black;
-    position: relative;
+    padding-top: 50px;
 
 }
 
 
 .title{
-    /*  border: 2px solid red;*/
     text-align: center;
 }
 
@@ -24,14 +21,13 @@
 }
 
 .main{
-    /*  border: 1px solid gold;*/
+
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .im{
-    /* border: 2px solid blue;*/
     width: 40vw;
     text-align: center;
 }
@@ -42,13 +38,11 @@
     box-shadow: 1px 7px 61px lime;
     width: 350px;
     height: auto;
-    /*transform: translateX(120px);*/
 }
 
 
 
 .details_sec{
-    /* border: 2px solid blue;*/
     width: 60vw;
     display: flex;
     height: auto;
@@ -70,7 +64,6 @@
 }
 
 .Social_meadias{
-    /* border: 1px solid lime;*/
     width: 60vw;
     display: flex;
     justify-content: center;
@@ -95,6 +88,7 @@
     .myimg{
         width: 304px!important;
     }
+
     .Social_meadias{
         width: 45vw!important;
         transform: translate(614px, 30px)!important;

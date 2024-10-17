@@ -2,14 +2,11 @@
     background-color: black;
     width: 100vw;
     height: auto;
-    position: relative;
-    top: 445px;
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 

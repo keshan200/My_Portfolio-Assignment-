@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-3</title>
+
+  <style>
+
+    body{
+      background-color: blue;
+    }
+
+
+
+    div{
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+
+
+
+      width:300px;
+      height: 300px;
+      background-color: gray;
+      border-radius: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+
+    p{
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+    }
+
+
+
+
+    div::before{
+      content: "";
+
+      border: 10px solid white;
+
+      border-radius: 100%;
+      border-top-color: red;
+
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+
+    }
+
+
+
+    div:hover::before{
+        transform: rotate(360deg);
+        transition-duration: 2s;
+     }
+
+
+
+  </style>
+
+
+
+</head>
+
+
+<body>
+
+
+    <div id="sec-circle">
+       <p>RWAD</p>
+   </div>
+
+
+</body>
+
+
+</html>

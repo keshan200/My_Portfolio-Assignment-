@@ -1,11 +1,11 @@
 #assimet-page{
 
-    position: relative;
-    top: 283px;
     width: 100vw;
     height: auto;
-
     background-color: black;
+
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 
@@ -14,14 +14,14 @@
 /*    border: 2px solid red;*/
     width: 100vw;
     display: grid;
-   margin-top: 30px;
+    margin-top: 30px;
     top: 50px;
     grid-template-columns: repeat(3,1fr);
 
 }
 
 .assigment-card{
-    padding: 10px;
+    padding: 20px;
     margin:20px auto;
     background:/* #0F0F0F*/black;
 /*    border: 1px solid lime;*/
@@ -31,6 +31,7 @@
     width: 320px ;
     height: 200px;
     color:lime;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .case{
@@ -56,10 +57,11 @@
 
 .img-sec{
     position: relative;
-    top: 60px;
+    top: 64px;
     display: flex;
     gap: 27px;
     justify-content: right;
+    margin-right: 24px;
 }
 
 .img-sec img{
@@ -86,10 +88,9 @@
         height: 174px;
     }
 
-    #assimet-page {
 
-        position: relative !important;
-        top: 453px !important;
+    .img-sec {
+        top: 46px!important;
     }
 }
 

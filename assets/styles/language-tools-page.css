@@ -2,8 +2,8 @@
     height: auto;
     width: 100vw;
     background-color: black;
-    position: relative;
-    top: 130px;
+
+    padding-top: 50px;
 }
 
 
@@ -103,10 +103,6 @@
         border-radius: 26px;
     }
 
-    #language-tools{
-        position: relative;
-        top: 300px!important;
-    }
 }
 
 @media all and (max-width: 768px ){
@@ -114,10 +110,7 @@
 
         margin: 34px!important;
     }
-    #language-tools{
-        position: relative!important;
-        top: 266px!important;
-    }
+
 }
 
 
@@ -130,10 +123,7 @@
         gap: 20px;
     }
 
-    #language-tools{
-        position: relative!important;
-        top: 266px!important;
-    }
+
 }
 
 
@@ -158,9 +148,5 @@
         gap: 13px!important;
     }
 
-    #language-tools{
-        position: relative;
-        top: 80px !important;
-    }
 }
 

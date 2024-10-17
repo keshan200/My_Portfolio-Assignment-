@@ -3,48 +3,29 @@
     height: auto;
     width: 100vw;
     background-color: black;
-    position: relative;
-    /*border: 1px solid deeppink;*/
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-
-
-    top: 54px;
-
-
+    padding-top: 250px;
 }
 
 #Education_title{
     color: white;
     font-size: 3rem;
     font-weight: bold;
-
-
-
-  /*  border: 1px solid orange;*/
 }
 
 
 .education_sec{
-  /*  border: 2px solid lime;*/
     height: 60vh;
     width: 50vw;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-
-
-
-
     overflow-x: hidden;
     overflow-y:auto;
-
 }
 
 .e-card{
-  /* border: 2px solid blue;*/
-
-
     display: flex;
     justify-content: center;
 }
@@ -55,11 +36,7 @@
     padding: 10px;
     text-align: center;
     background-color: #0F0F0F;
-   /* border: 2px solid lime;*/
     border-radius: 20px;
-    /*border: 2px solid lime;
-    box-shadow: 0 4px 30px rgba(0, 255, 0, 0.3);*/
-
     box-shadow: 0 4px 8px whitesmoke;
     max-width: 500px;
     Height:  auto;
@@ -96,7 +73,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Almarai', sans-serif;
-   margin: 0;
+    margin: 0;
 }
 
 
@@ -111,9 +88,7 @@
 .desc{
     font-weight: normal;
     font-family: 'Almarai', sans-serif;
-
     text-align: center;
-   /*padding-top: 35px;*/
     color: whitesmoke;
     margin: auto;
     margin-bottom: 10px;
@@ -166,10 +141,6 @@
         width: 424px;
     }
 
-    #education-journey{
-        position: relative;
-        top: 244px!important;
-    }
 }
 
 
@@ -178,7 +149,7 @@
         display: flex!important;
         flex-direction: column!important;
         width: 100vw!important;
-        top: 150px;
+
     }
 
     .education_sec{
@@ -208,9 +179,6 @@
         width: 327px;
     }
 
-    #education-journey{
-        top:150px!important;
-    }
 }
 
 
@@ -227,8 +195,4 @@
         width: 237px;
     }
 
-    #education-journey{
-        position: relative;
-        top: 20px !important;
-    }
 }
