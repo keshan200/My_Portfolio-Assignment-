@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .assignment-sec {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .assignment-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .assignment-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .case-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .case-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .assignment-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .assignment-img:hover {
+            opacity: 0.85;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+<main class="assignment-sec">
+
+    <!-- Assignment 1 -->
+    <section class="assignment-card">
+        <p class="case-title">Case 1</p>
+        <p class="case-description">This case is a transition for navigation.</p>
+        <a href="#"><img src="image1.jpg" alt="Assignment Image" class="assignment-img"></a>
+    </section>
+
+    <!-- Assignment 2 -->
+    <section class="assignment-card">
+        <p class="case-description">Lorem ipsum dolor sit amet...</p>
+        <img src="image2.jpg" alt="Assignment Image" class="assignment-img">
+        <p class="case-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <a href="#"><img src="image3.jpg" alt="Assignment Image" class="assignment-img"></a>
+    </section>
+
+</main>
+</body>
+</html>
