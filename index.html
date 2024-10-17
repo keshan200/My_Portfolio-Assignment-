@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preloader Example</title>
+
+
   <style>
-    /* Basic Reset */
-
-
-    /* Body Style */
     body {
       background-color: black;
-      overflow-x: hidden; /* Hide scrollbar while loading */
+      overflow-x: hidden;
     }
 
-    /* Preloader Styles */
+
     .preloader {
       position: fixed;
       top: 0;
@@ -29,7 +27,6 @@
       z-index: 9999;
     }
 
-    /* Keyframes for square animation */
     @keyframes square-animation {
       0% { left: 0; top: 0; }
       10.5% { left: 0; top: 0; }
@@ -81,11 +78,9 @@
     .loader-square:nth-of-type(6) { animation-delay: -8.5714285714s; }
     .loader-square:nth-of-type(7) { animation-delay: -10s; }
 
-    /* Main Content (Initially Hidden) */
-    .main-content {
-
-    }
   </style>
+
+
 </head>
 <body>
 
@@ -168,8 +163,7 @@
 
       body{
         overflow-x: hidden;
-        /*  background-color: #010505fa;*/
-        background-color: gray;
+        background-color: black;
 
 
         position: relative;
@@ -840,6 +834,8 @@
   </html>
 </div>
 
+
+
 <script>
   // JavaScript to hide the preloader and show the content
   window.addEventListener('load', () => {
@@ -847,7 +843,7 @@
     setTimeout(() => {
       document.querySelector('.preloader').style.display = 'none'; // Hide preloader
       document.querySelector('.main-content').style.display = 'block'; // Show main content
-    }, 2000); // Set delay in milliseconds (2 seconds)
+    }, 3000); // Set delay in milliseconds (3 seconds)
   });
 </script>
 
