@@ -100,20 +100,23 @@ nav{
     color: whitesmoke;
     margin: 0;
     transform: translate(-13em, -1em);
+    font-family: "Almarai", sans-serif;
 }
 
 #sec{
     font-size: 6rem;
-    color: limegreen;
+    color: lime;
     margin: 0;
+    font-weight: bold;
+
 
 
     text-shadow:
-            -1px -1px 0 lawngreen,  /* Top-left shadow */
-            1px -1px 0 lawngreen,   /* Top-right shadow */
-            -1px 1px 0 lawngreen,   /* Bottom-left shadow */
-            1px 1px 0 lawngreen;    /* Bottom-right shadow */
-    animation: blink-caret 0.7s step-end infinite;
+            -1px -1px 0 lime,  /* Top-left shadow */
+            1px -1px 0 lime,   /* Top-right shadow */
+            -1px 1px 0 lime,   /* Bottom-left shadow */
+            1px 1px 0 lime;    /* Bottom-right shadow */
+
 }
 
 
@@ -150,6 +153,7 @@ nav{
     height: 37px;
     font-weight: bold;
     font-size:1.1rem ;
+    font-family: "Poppins", sans-serif;
 }
 
 #cv_btn{
@@ -178,7 +182,7 @@ nav{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: black;
+    background-color: #0F0F0F;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -258,6 +262,7 @@ nav{
 
     .di{
         text-align: center;
+
     }
 
     #first{

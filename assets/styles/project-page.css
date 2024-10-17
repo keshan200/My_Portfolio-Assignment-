@@ -74,6 +74,14 @@
     margin: 0;
 }
 
+
+.yr{
+    color: lime;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: left;
+}
+
 .p-card img {
     max-width: 100%;
     height: auto;
@@ -136,42 +144,47 @@
 }
 
 
-/* Default state: Hide the new content */
+
 .new-content-p {
     color: ghostwhite;
-    font-family:"Arvo", serif;
+   font-family: "Almarai", sans-serif;
     transform: translateY(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* On hover, hide the Title, image, and GitHub button */
+
 .p-card:hover .Title,
 .p-card:hover img,
 .p-card:hover .github-button {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* On hover, show the new content */
+
 .p-card:hover .new-content-p {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-300px);
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    transform: translateY(-360px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Ensure the .p-card has a hover effect */
+
 .p-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .p-card:hover {
-    transform: scale(1.05); /* Slight scale-up effect */
-    box-shadow: 0 4px 8px lime; /* Change shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px lime;
 }
+
+
 
 @media all and (max-width: 1024px) {
 
@@ -189,11 +202,13 @@
         min-width: 245px;
     }
 
+    .new-content-p {
+        font-size: 0.9rem!important;
+    }
+
     .p-card:hover .new-content-p {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(-335px);
-        transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+        transform: translateY(-342px);
+
     }
 }
 
@@ -217,7 +232,7 @@
 @media all and (max-width: 425px) {
 
     .p-card {
-        min-width: 200px;
+       width: 200px;
         height: 300px;
     }
 
@@ -230,11 +245,14 @@
 }
 
 
-@media all and (max-width: 375px){
+@media all and (max-width: 376px){
 
-    .new-content-p{
-        font-size: 0.8rem ;
+    .new-content-p {
+        font-size: 0.9rem!important;
     }
 
-
+    .p-card {
+         width: 230px!important;
+        height: 348px!important;
+    }
 }

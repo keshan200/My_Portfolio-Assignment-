@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    padding-top: 250px;
+    padding-top: 50px;
 }
 
 #Education_title{
@@ -141,6 +141,9 @@
         width: 424px;
     }
 
+    #education-journey{
+        padding-top: 250px;
+    }
 }
 
 
@@ -179,6 +182,10 @@
         width: 327px;
     }
 
+
+    #education-journey{
+        padding-top: 20px;
+    }
 }
 
 

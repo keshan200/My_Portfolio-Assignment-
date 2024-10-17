@@ -21,7 +21,7 @@
 }
 
 .assigment-card{
-    padding: 20px;
+    padding: 10px;
     margin:20px auto;
     background:/* #0F0F0F*/black;
 /*    border: 1px solid lime;*/
@@ -31,6 +31,10 @@
     width: 320px ;
     height: 200px;
     color:lime;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
@@ -44,20 +48,20 @@
 
 
 .about{
-    font-weight: bold;
+    font-weight: normal;
     font-family: "Almarai", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
     text-align: left;
     color: #666666;
     position: relative;
     top: 27px;
+    transform: translateY(-22px);
 }
 
 
 .img-sec{
-    position: relative;
-    top: 64px;
+
     display: flex;
     gap: 27px;
     justify-content: right;
@@ -75,6 +79,12 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 8px white;
     transition: color 1s;
+}
+
+
+.img-sec img:hover {
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition: transform 2s ease-in;
 }
 
 

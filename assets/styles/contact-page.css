@@ -122,6 +122,9 @@
 
 .author{
     background-color: #0F0F0F;
+    color: lime;
+    font-weight: bold;
+    font-family: "Arvo", serif;
     padding: 10px;
 }
 
