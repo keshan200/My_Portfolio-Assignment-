@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>portfolio</title>
+    <link id="f" rel="icon" type="images/x-icon" href="../assests/icons/header.png" />
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+    <link rel="icon" href="../assets/favicon.png"> <!-- Favicon -->
+
+
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/animations.css">
+   <!-- <link rel="stylesheet" href="assets/styles/responsive.css">-->
+
+    <link rel="stylesheet" href="assets/styles/home-page.css">
+    <link rel="stylesheet" href="assets/styles/about-me-page.css">
+    <link rel="stylesheet" href="assets/styles/education-page.css">
+    <link rel="stylesheet" href="assets/styles/language-tools-page.css">
+    <link rel="stylesheet" href="assets/styles/project-page.css">
+    <link rel="stylesheet" href="assets/styles/assiment-page.css">
+    <link rel="stylesheet" href="assets/styles/service-page.css">
+    <link rel="stylesheet" href="assets/styles/contact-page.css">
+
+
+
+
+
+    <!--HeaderBar Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <!--lstText Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <!--"Arvo", serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        body{
+            overflow-x: hidden;
+          /*  background-color: #010505fa;*/
+            background-color: gray;
+
+
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 100vw;
+
+        }
+
+        .dotWrapper {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+
+        /* Shared Dot Styles */
+        .dot {
+            width: 1.5px;
+            height: 1.5px;
+            background: white;
+            border-radius: 50%;
+
+        }
+
+        /* Rotating Keyframes */
+        @keyframes rotating {
+            0% {
+                opacity: 0;
+                transform: rotate(0deg);
+            }
+            25%, 75% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Flying Keyframes */
+     /*   @keyframes flying {
+            0%{
+                transform: translate(0, 0);
+            }
+            10% {
+                transform: translate(20px, 50px);
+            }
+            20% {
+                transform: translate(-30px, 10px);
+            }
+            30% {
+                transform: translate(10px, 60px);
+            }
+            40% {
+                transform: translate(50px, 0px);
+            }
+            50% {
+                transform: translate(-10px, -40px);
+            }
+            60% {
+                transform: translate(-40px, 20px);
+            }
+            70% {
+                transform: translate(30px, -30px);
+            }
+            80% {
+                transform: translate(0px, -60px);
+            }
+            90% {
+                transform: translate(40px, 10px);
+            }
+        }*/
+        @keyframes flying {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-30px); /* Adjust to your liking */
+            }
+        }
+
+
+        /*
+        @keyframes flying {
+            0% {
+                transform: translate(0, 0);
+            }
+            10% {
+                transform: translate(5vw, 10vh); !* Use vw and vh for responsive movement *!
+            }
+            20% {
+                transform: translate(-5vw, 5vh);
+            }
+            30% {
+                transform: translate(10vw, 15vh);
+            }
+            40% {
+                transform: translate(5vw, 0);
+            }
+            50% {
+                transform: translate(-5vw, -10vh);
+            }
+            60% {
+                transform: translate(-10vw, 5vh);
+            }
+            70% {
+                transform: translate(5vw, -5vh);
+            }
+            80% {
+                transform: translate(0, -10vh);
+            }
+            90% {
+                transform: translate(5vw, 5vh);
+            }
+        }
+        */
+
+    </style>
+
+
+
+
+
+</head>
+
+
+<body class="main-cot">
+
+<div id="dotContainer"></div>
+
+
+
+
+
+
+
+<!--Home Page-->
+<main id="Home">
+
+    <!--header Section-->
+    <header>
+
+        <!--navigate section -->
+        <section class="headerbar">
+
+            <!--navigate section img-->
+            <div class="logo">
+                <img  src="assets/images/header_logo.png">
+            </div>
+
+
+            <!-- Menu Icon for Mobile/Tablet -->
+            <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+
+            <!--Home page Navigation-->
+            <nav>
+                <ul class="NavigtionLink">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#education-journey">Education</a></li>
+                    <li><a href="#language-tools">Tools</a></li>
+                    <li><a href="#project-page">Projects</a></li>
+                    <li><a href="#assimet-page">Assigment</a></li>
+                    <li><a href="#service-page">Services</a></li>
+                    <li><a href="#contact-page">Contact me</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sidebar Navigation for Mobile/Tablet -->
+            <div id="sidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+                <a href="#Home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#education-journey">Education</a>
+                <a href="#language-tools">Tools</a>
+                <a href="#project-page">Projects</a>
+                <a href="#assimet-page">Assignments</a>
+                <a href="#service-page">Services</a>
+                <a href="#contact-page">Contact Me</a>
+            </div>
+
+        </section>
+    </header>
+
+    <!--HomePage Content-->
+    <main class="Home-Page-Content">
+
+        <!--HomePage Myphoto-->
+        <div  class="MyImg">
+            <img src="assets/images/my_photo.png">
+        </div>
+
+        <!--HomePage Name & Position-->
+        <section class="nameposition">
+
+            <!--Text-->
+              <div class="di">
+                  <h5 id="first">Hi there</h5>
+                  <h6 id="sec">I'm Keshan Silva</h6>
+                  <h5 id="thir"></h5>
+                <br>
+                <h3 id="four">i am undergraduate Software engineer .<br>based in Sri Lanka</h3>
+              </div>
+
+            <!--buttons-->
+            <div class="btn">
+                <button id="cv_btn">Download CV</button>
+                <button class=" animate__animated animate__bounce" id="hire_btn">Hire me</button>
+            </div>
+        </section>
+
+    </main>
+
+</main>
+
+
+<!--About me Page-->
+<main id="about-me">
+
+    <!--Title-->
+    <div class="title">
+        <p>About Me</p>
+    </div>
+
+
+    <!--about me-->
+    <main class="main">
+
+        <!--My image-->
+        <div class="im">
+        <img class="myimg" src="assets/images/my_image_2.png" alt="Keshan" title="My_Photo">
+        </div>
+
+        <!--my Details-->
+        <section class="details_sec">
+            <p id="details">I am passionate about using technology to solve complex problems and make a positive impact on the world. So currently I am studying Software Engineering at IJSE-Institute of Software Engineering.<br><br> As a creative problem solver and team player, I am committed to delivering high-quality work and exceeding expectations. I am eager to connect with other technology professionals and explore new opportunities for growth and development.</p>
+        </section>
+
+    </main>
+
+    <!--Socail Meadia Navigation-->
+        <nav class="Social_meadias" >
+            <a href="https://www.linkedin.com/in/keshan-silva-104b6a2a9/"><img src="assets/icons/Linkdin-green.png" title="linkdin" alt="Linkdin"></a>
+            <a href="https://www.facebook.com/sachintha.keshan.24/"><img src="assets/icons/facebook-green.png" title="Facebook" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="assets/icons/instergram-green.png" title="instergram" alt="Intergram"></a>
+            <a href="mailto:sachinthakeshan175@gmail.com"><img src="assets/icons/mail-green.png" title="mail" alt="Mail"></a>
+            <a href="https://github.com/keshan200"><img src="assets/icons/github-green.png" title="github" alt="github" ></a>
+        </nav>
+
+
+</main>
+
+
+<!--Education Journey page-->
+<main id="education-journey">
+
+    <!--Title-->
+    <div>
+        <p id="Education_title"> Journey Of Education</p>
+
+        <p id="certificate">View My Certificates</p>
+    </div>
+
+
+    <!--Eduaction Details-->
+    <section  class="education_sec">
+
+        <!--Ijse-->
+        <div class="e-card">
+            <div>
+                <p class="date">2023-Present</p>
+                <p class="course">Graduate Diploma in Software Engineering</p>
+                <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
+            </div>
+        </div>
+
+
+        <!--Sliit-->
+        <div class="e-card">
+            <div class="">
+                <p class="date">2023-Present</p>
+                <p class="course">Certificate Course in AI/ML Engineering</p>
+                <p class="location">SLIIT-Sri Lanka Institute of Information Technology-Malabe</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
+            </div>
+        </div>
+
+        <!--TEB-->
+        <div class="e-card">
+        <div>
+            <p class="date">2023-Present</p>
+            <p class="course">Certificate Course in AI/ML Engineering</p>
+            <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+            <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
+        </div>
+        </div>
+
+        <!--Britishway-->
+        <div class="e-card">
+            <div>
+                <p class="date">2023-Present</p>
+                <p class="course">Graduate Diploma in Software Engineering</p>
+                <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
+            </div>
+        </div>
+
+        <!--School-->
+        <div class="e-card">
+            <div>
+                <p class="date">2023-Present</p>
+                <p class="course">Graduate Diploma in Software Engineering</p>
+                <p class="location">IJSE-Institute of Software Engineering-Panadura</p>
+                <p class="desc">The Graduate Diploma in Software Engineering (GDSE) equips students with essential programming skills, software development practices, and industry-relevant knowledge for success.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+</main>
+
+
+<!--Languages & Tools page-->
+<main id="language-tools">
+
+    <!--count my projects-->
+    <div class="title-section">
+        <div class="count-projects">
+            <div>
+            <p>3 Projects</p>
+            <p>1+ Years Experience</p>
+            <p>12 Tools</p>
+            </div>
+        </div>
+
+        <br><br>
+        <h1 class="title">Languages & Tools</h1>
+    </div>
+
+    <!--Tools Icons-->
+    <main class="grid-sec">
+        <section class="icons">
+            <div class="first-sec">
+            <img src="assets/icons/java.png" title="java" alt="java">
+            <img src="assets/icons/mysql.png" title="mysql" alt="mysql">
+            <img src="assets/icons/figma.png" title="figma" alt="figma">
+            <img src="assets/icons/html.png" title="html" alt="html">
+            <img src="assets/icons/css.png" title="css" alt="css">
+
+            </div>
+
+            <div class="second-sec">
+            <img src="assets/icons/python.png" title="python" alt="python">
+            <img src="assets/icons/java-script.png" title="java-script" alt="java-script">
+            <img src="assets/icons/git.png" title="git" alt="git">
+            </div>
+
+
+
+        </section>
+    </main>
+
+</main>
+
+
+<!--Projects page-->
+<main id="project-page">
+    <!-- Title -->
+    <div class="title">
+        <p>Projects</p>
+    </div>
+
+
+    <main class="content">
+    <!-- Projects Scroll Section -->
+    <section class="project-sec">
+        <!-- Project 1 -->
+        <section id="card-1" class="p-card">
+            <p class="Title">VIP-Travel Management System</p>
+            <img src="assets/images/projects-img/vip-travel.png" alt="Project 1 Image">
+            <button class="github-button">View Via GitHub</button>
+
+            <div class="new-content-p">
+                <p class="yr">2024</p>
+                <p>The VIP Travel Management System is a user-friendly solution for managing VIP travel bookings and schedules. Built using JavaFX for the frontend and SQL for the backend, it ensures smooth and responsive interactions. The system securely handles client data, bookings, and payments, making it ideal for luxury travel management.</p>
+                <button class="github-button2">View Via GitHub</button>
+            </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section id="card-2" class="p-card">
+            <p class="Title">VIP-Travel Management System</p>
+            <img src="assets/images/projects-img/img_1.png" alt="Project 1 Image">
+            <button class="github-button">View Via GitHub</button>
+
+
+            <div class="new-content-p">
+                <p class="yr">2024</p>
+                <p>The VIP Travel Management System is a user-friendly solution for managing VIP travel bookings and schedules. Built using JavaFX for the frontend and SQL for the backend, it ensures smooth and responsive interactions. The system securely handles client data, bookings, and payments, making it ideal for luxury travel management.</p>
+                <button class="github-button2">View Via GitHub</button>
+            </div>
+        </section>
+
+        <!-- Project 3 -->
+        <section id="card-3" class="p-card">
+            <p class="Title">VIP-Travel Management System</p>
+            <img src="assets/images/projects-img/img.png" alt="Project 1 Image">
+            <button class="github-button">View Via GitHub</button>
+
+            <div class="new-content-p">
+                <p class="yr">2024</p>
+                <p>The VIP Travel Management System is a user-friendly solution for managing VIP travel bookings and schedules. Built using JavaFX for the frontend and SQL for the backend, it ensures smooth and responsive interactions. The system securely handles client data, bookings, and payments, making it ideal for luxury travel management.</p>
+                <button class="github-button2">View Via GitHub</button>
+            </div>
+        </section>
+
+
+        <!--sec-->
+    </section>
+
+    <!-- Anchor Links for Buttons -->
+    <div class="btn-scrol">
+        <a href="#card-1" class="scroll-btn"></a>
+        <a href="#card-2" class="scroll-btn"></a>
+        <a href="#card-3" class="scroll-btn"></a>
+    </div>
+    </main>
+
+</main>
+
+
+
+<!--Assigments page-->
+<main id="assimet-page">
+
+
+        <div class="title">
+            <p>Assigments</p>
+        </div>
+
+        <!--about assigments-->
+        <main class="assigment-sec">
+
+            <!--Assigment 1-->
+        <section class="assigment-card">
+            <p class="case">Case 1</p>
+            <p class="about">This case is Transition for navigation </p>
+
+            <div class="img-sec">
+            <a href=""><img src="assets/images/github-green.png"></a>
+            <a href="assets/assignments/assigment4/html/case_1.html"><img src="assets/images/live.png"></a>
+            </div>
+
+        </section>
+
+        <!--Assigment 2-->
+        <section class="assigment-card">
+            <p class="case">Case 2</p>
+            <p class="about">This case is transition for rotate a circle border when some one point it. </p>
+
+            <div class="img-sec">
+                <a href=""><img src="assets/images/github-green.png"></a>
+                <a href="assets/assignments/assigment4/html/case_3.html"><img src="assets/images/live.png"></a>
+            </div>
+        </section>
+
+        <!--Assigment 3-->
+        <section class="assigment-card">
+            <p class="case">Case 3</p>
+            <p class="about">This case is basic rotation with animation </p>
+
+            <div class="img-sec">
+                <a href=""><img src="assets/images/github-green.png"></a>
+                <a href="assets/assignments/assigment4/html/case_4.html"><img src="assets/images/live.png"></a>
+            </div>
+        </section>
+
+        <!--Assigment 4-->
+        <section class="assigment-card">
+            <p class="case">Case 4</p>
+            <p class="about">This case is water drop animation</p>
+
+            <div class="img-sec">
+                <a href=""><img src="assets/images/github-green.png"></a>
+                <a href="assets/assignments/assigment4/html/case_2.html"><img src="assets/images/live.png"></a>
+            </div>
+        </section>
+
+        <!--Assigment 5-->
+        <section class="assigment-card">
+            <p class="case">Case 5</p>
+            <p class="about">This case is Transition for navigation </p>
+
+            <div class="img-sec">
+                <a href=""><img src="assets/images/github-green.png"></a>
+                <a href="assets/assignments/assigment4/html/case_5.html"><img src="assets/images/live.png"></a>
+            </div>
+        </section>
+
+
+            <!--Assigment 6-->
+            <section class="assigment-card">
+                <p class="case">Case 6</p>
+                <p class="about">This case is Transition for navigation </p>
+
+                <div class="img-sec">
+                    <a href=""><img src="assets/images/github-green.png"></a>
+                    <a href="assets/assignments/assigment4/html/case_6.html"><img src="assets/images/live.png"></a>
+                </div>
+            </section>
+
+        </main>
+    </main>
+
+
+<!--Services Page-->
+<main id="service-page">
+
+    <div class="title">
+        <p>My Services</p>
+    </div>
+
+
+  <main class="assigment-sec">
+    <!--service 1-->
+    <section class="service-card">
+
+        <div class="outline">
+           <img class="s-icon" src="assets/icons/web_dev.png">
+           <p class="service">Full-Stack <br> Web Development</p>
+        </div>
+
+        <div class="new-content">
+            <p>We create Full-stack Web Development as responsive ,user-friendy website with stunning designs and robust systems tailored to meet your business needs</p>
+        </div>
+
+    </section>
+
+    <!--service 2-->
+    <section  class="service-card">
+
+        <div class="outline">
+           <img class="s-icon" src="assets/icons/figma_lime.png">
+           <p class="service">UI/UX Designs</p>
+        </div>
+
+        <div class="new-content">
+            <p>Bring your ideas to life with our expert Figma services.We create that captivate and engage</p>
+        </div>
+
+    </section>
+
+    <!--service 3-->
+    <section  class="service-card">
+
+        <div class="outline">
+           <img class="s-icon" src="assets/icons/desktop_lime.png">
+           <p class="service">Desktop <br> Application Development</p>
+        </div>
+
+        <div class="new-content">
+            <p>We specialize in developing powerful,user-friendly dekstop applications tailored to your business needs</p>
+        </div>
+
+    </section>
+
+
+  </main>
+</main>
+
+
+<!--Contact Page-->
+<main id="contact-page">
+
+    <!--Title-->
+    <div class="title">
+        <P>Let's Connect !</P>
+    </div>
+
+    <!--Page Content-->
+    <main class="main-sec">
+
+        <!--send mail Form-->
+        <section class="form-sec">
+            <div class="header">
+                <h5>Get in Touch ,</h5>
+            </div>
+
+            <!--Form-->
+            <div>
+                <form class="form">
+                   <!-- <input class="textField" type="text" placeholder="Full Name">
+                    <input class="textField" type="email" placeholder="e-mail">
+                    <input class="textField msg" type="text" placeholder="Message">-->
+
+                    <input class="textField" type="text" name="name" placeholder="Full Name" required>
+                    <input class="textField" type="email" name="email" placeholder="Email" required>
+                    <input class="textField msg" type="text" name="message" placeholder="Message" required>
+
+
+                    <button class="sub-btn" type="submit">
+                        send Mail
+                    </button>
+                </form>
+
+
+            </div>
+
+        </section>
+
+        <!--Texts-->
+        <section class="description">
+            <P>Thank you for visiting my portfolio.if you have ant questions, contact me or would like to discuss potential collaborations ,please feel free to get any touch using the form .I look forward to hearing from you!<br><br>Best regard,<br>keshan.</P>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <!--Socail Meadia Navigation-->
+        <section class="social-nav">
+            <a href="https://www.linkedin.com/in/keshan-silva-104b6a2a9/"><img src="assets/icons/Linkdin-green.png" title="linkdin" alt="Linkdin"></a>
+            <a href="https://www.facebook.com/sachintha.keshan.24/"><img src="assets/icons/facebook-green.png" title="Facebook" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="assets/icons/instergram-green.png" title="instergram" alt="Intergram"></a>
+            <a href="mailto:sachinthakeshan175@gmail.com"><img src="assets/icons/mail-green.png" title="mail" alt="Mail"></a>
+        </section>
+
+        <div class="author">
+            <p>Copyright &copy; 2024. Developed by Keshan Silva</p>
+        </div>
+
+    </footer>
+
+</main>
+
+
+
+
+
+<!--menu icon for tab and mobile sizes-->
+<script src="assets/js/menu-icon.js"></script>
+
+<!--Background dot flying-->
+<script src="assets/js/dot-flying.js"></script>
+
+<!-- role typing Home Page-->
+<script src="assets/js/typing-animation.js"></script>
+
+
+<!--Scroll animation-project page-->
+<script src="assets/js/card-scroll.js"></script>
+<!--AOS Animation-->
+
+
+</body>
+
+
+
+
+</html>
