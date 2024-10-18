@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/normalize.css">
+  <title>case_4</title>
+
+  <style>
+
+    body{
+      margin: 0;
+      overflow-x: hidden;
+      height: 100vh;
+    }
+
+    section{
+      height: 100vh;
+    }
+
+    section>div{
+      position: sticky;
+      top: 0;
+      background: red;
+      padding: 20px;
+      z-index: 1;
+
+    }
+
+    section>div>p{
+      margin: 0;
+      font-size: 4rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    section>p{
+      height: fit-content;
+      font-weight: bold;
+      font-size: 7rem;
+      position: absolute;
+      text-align: center;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+/*
+section2*/
+
+   #sec2>div{
+
+      position: sticky;
+       top: 0;
+      background: pink;
+      padding: 20px;
+     z-index: 1;
+    }
+
+    #sec2{
+      background: cadetblue;
+      position: relative;
+      height: 100vh;
+    }
+
+
+    /*section3*/
+
+    #sec3>div{
+      background: darkblue;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    #sec3{
+      height: 100vh;
+      background: dodgerblue;
+      position: relative;
+    }
+
+
+    /*section4*/
+
+
+    #sec4>div{
+      background: orange;
+      position: sticky;
+      top: 0;
+    }
+
+    #sec4{
+      height: 100vh;
+      position: relative;
+      background: red;
+    }
+
+
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+<section>
+  <div>
+    <p>Card 1</p>
+  </div>
+
+  <p>Hello</p>
+
+</section>
+
+<section id="sec2">
+  <div>
+    <p>Card 2</p>
+  </div>
+
+  <p>How</p>
+</section>
+
+<section id="sec3">
+  <div>
+    <p>Card 3</p>
+  </div>
+
+  <p>Are </p>
+</section>
+
+<section id="sec4">
+  <div>
+    <p>Card 4</p>
+  </div>
+
+  <p>You? </p>
+</section>
+
+</body>
+
+
+
+
+</html>

@@ -437,9 +437,11 @@ nav{
 }
 
 
-@media all and (max-width:375px){
+@media all and (max-width:376px){
 
-
+#four{
+    margin-top: 10px!important;
+}
 }
 
 
@@ -465,8 +467,13 @@ nav{
         transform: translate(-4em,-14em)!important;
     }
 
+    #thir{
+        margin-top: 15px!important;
+    }
+
     #four{
         width: 97vw!important;
+
     }
 
 

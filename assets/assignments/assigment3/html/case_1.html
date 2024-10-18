@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <title>case_1</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        body>section{
+            justify-content: center;
+            display:flex;
+            align-items: center;
+        }
+
+        body>section:first-child{
+            background-color: red;
+            width: 50vw;
+            height: 50vh;
+
+        }
+
+        body>section:nth-child(2){
+            background-color: green;
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        body>section:nth-child(3){
+           background-color: gold;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        body>section:nth-child(4){
+            background-color: deeppink;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 50vw;
+            height: 50vh;
+        }
+
+       body>section:nth-child(5){
+           background-color: white;
+           position: absolute;
+           width: 15vw;
+           height: 15vw;
+           margin: auto;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+       }
+
+       body>section>div{
+           border-radius: 100%;
+           width: 13vw;
+           height: 13vw;
+           background-color: white;
+           justify-content: center;
+           display:flex;
+           align-items: center;
+
+
+       }
+
+      section>div>div:first-child{
+           width: 5vw;
+           height: 5vw;
+           background-color: red;
+       }
+
+      .cor{
+          border-radius: 100%;
+          width: 13vw;
+          height: 13vw;
+          background-color: white;
+        position: absolute;
+      }
+
+      #c1{
+          top:calc(-13vw/2);
+          left:calc(-13vw/2) ;
+      }
+
+      #c2{
+          top:calc(-13vw/2) ;
+          margin: auto;
+          left: 0;
+          right: 0;
+      }
+
+
+        #c3{
+            top:calc(-13vw/2) ;
+            right: calc(-13vw/2) ;
+            margin: auto;
+        }
+
+        #c4 {
+            bottom: calc(-13vw/2);
+            right: calc(-13vw/2);
+            margin: auto;
+                }
+
+        #c5{
+            bottom:calc(-13vw/2);
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #c6{
+            bottom: calc(-13vw/2);
+            left:calc(-13vw/2)  ;
+        }
+
+        section:nth-child(5){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:nth-child(5)>div{
+            width: 10vw;
+            height: 10vw;
+            border-radius: 100%;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<section><div><div></div></div></section>
+<section><div><div></div></div></section>
+<section><div><div></div></div></section>
+<section><div><div></div></div></section>
+
+<section><div></div></section>
+
+
+
+<div id="c1" class="cor"></div>
+<div id="c2" class="cor"></div>
+<div id="c3" class="cor"></div>
+<div id="c4" class="cor"></div>
+<div id="c5" class="cor"></div>
+<div id="c6" class="cor"></div>
+
+
+</body>
+
+</html>
