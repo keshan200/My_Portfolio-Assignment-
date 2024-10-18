@@ -9,6 +9,8 @@
 }
 
 .headerbar{
+ /*   background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);*/
     background-color: black;
     width: 100vw;
     max-height: 12vh;
@@ -182,7 +184,9 @@ nav{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #0F0F0F;
+   /* background-color: #0F0F0F;*/
+       background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
