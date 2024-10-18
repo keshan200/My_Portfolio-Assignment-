@@ -1,5 +1,4 @@
-/*
-const dotCount = 800; // Number of dots
+const dotCount = 500; // Number of dots
 const container = document.getElementById('dotContainer');
 
 // Dynamically create dot wrappers and dots
@@ -20,7 +19,3 @@ for (let i = 1; i <= dotCount; i++) {
     dotWrapper.appendChild(dot);
     container.appendChild(dotWrapper);
 }
-
-
-
-*/

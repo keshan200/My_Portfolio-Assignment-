@@ -2,7 +2,7 @@
 #education-journey{
     height: auto;
     width: 100vw;
-    background-color: black;
+    background-color: transparent;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
