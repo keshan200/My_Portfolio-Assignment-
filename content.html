@@ -656,6 +656,69 @@
 
 
 <!--Contact Page-->
+<!--<main id="contact-page">
+
+  &lt;!&ndash;Title&ndash;&gt;
+  <div class="title">
+    <P>Let's Connect !</P>
+  </div>
+
+  &lt;!&ndash;Page Content&ndash;&gt;
+  <main class="main-sec">
+
+    &lt;!&ndash;send mail Form&ndash;&gt;
+    <section class="form-sec">
+      <div class="header">
+        <h5>Get in Touch ,</h5>
+      </div>
+
+      &lt;!&ndash;Form&ndash;&gt;
+      <div>
+        <form class="form">
+          &lt;!&ndash; <input class="textField" type="text" placeholder="Full Name">
+           <input class="textField" type="email" placeholder="e-mail">
+           <input class="textField msg" type="text" placeholder="Message">&ndash;&gt;
+
+          <input class="textField" type="text" name="name" placeholder="Full Name" required>
+          <input class="textField" type="email" name="email" placeholder="Email" required>
+          <input class="textField msg" type="text" name="message" placeholder="Message" required>
+
+
+          <button class="sub-btn" type="submit">
+            send Mail
+          </button>
+        </form>
+
+
+      </div>
+
+    </section>
+
+    &lt;!&ndash;Texts&ndash;&gt;
+    <section class="description">
+      <P>Thank you for visiting my portfolio.if you have ant questions, contact me or would like to discuss potential collaborations ,please feel free to get any touch using the form .I look forward to hearing from you!<br><br>Best regard,<br>keshan.</P>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    &lt;!&ndash;Socail Meadia Navigation&ndash;&gt;
+    <section class="social-nav">
+      <a href="https://www.linkedin.com/in/keshan-silva-104b6a2a9/"><img src="assets/icons/Linkdin-green.png" title="linkdin" alt="Linkdin"></a>
+      <a href="https://www.facebook.com/sachintha.keshan.24/"><img src="assets/icons/facebook-green.png" title="Facebook" alt="Facebook"></a>
+      <a href="https://www.instagram.com/"><img src="assets/icons/instergram-green.png" title="instergram" alt="Intergram"></a>
+      <a href="mailto:sachinthakeshan175@gmail.com"><img src="assets/icons/mail-green.png" title="mail" alt="Mail"></a>
+    </section>
+
+    <div class="author">
+      <p>Copyright &copy; 2024. Developed by Keshan Silva</p>
+    </div>
+
+  </footer>
+
+</main>-->
+<!--Contact Page-->
 <main id="contact-page">
 
   <!--Title-->
@@ -674,51 +737,36 @@
 
       <!--Form-->
       <div>
-        <form class="form">
-          <!-- <input class="textField" type="text" placeholder="Full Name">
-           <input class="textField" type="email" placeholder="e-mail">
-           <input class="textField msg" type="text" placeholder="Message">-->
-
-          <input class="textField" type="text" name="name" placeholder="Full Name" required>
-          <input class="textField" type="email" name="email" placeholder="Email" required>
-          <input class="textField msg" type="text" name="message" placeholder="Message" required>
-
-
-          <button class="sub-btn" type="submit">
-            send Mail
-          </button>
+        <form id="contactForm" class="form">
+          <input id="name" class="textField" type="text" name="name" placeholder="Full Name" required>
+          <input id="email" class="textField" type="email" name="email" placeholder="Email" required>
+          <input id="msg" class="textField msg" type="text" name="message" placeholder="Message" required>
+          <button class="sub-btn" type="submit">Send Mail</button>
         </form>
-
-
       </div>
-
     </section>
 
     <!--Texts-->
     <section class="description">
-      <P>Thank you for visiting my portfolio.if you have ant questions, contact me or would like to discuss potential collaborations ,please feel free to get any touch using the form .I look forward to hearing from you!<br><br>Best regard,<br>keshan.</P>
+      <P>Thank you for visiting my portfolio. If you have any questions or would like to discuss potential collaborations, please feel free to get in touch using the form. I look forward to hearing from you!<br><br>Best regards,<br>Keshan.</P>
     </section>
 
   </main>
 
-
   <footer class="footer">
-    <!--Socail Meadia Navigation-->
     <section class="social-nav">
-      <a href="https://www.linkedin.com/in/keshan-silva-104b6a2a9/"><img src="assets/icons/Linkdin-green.png" title="linkdin" alt="Linkdin"></a>
+      <a href="https://www.linkedin.com/in/keshan-silva-104b6a2a9/"><img src="assets/icons/Linkdin-green.png" title="LinkedIn" alt="LinkedIn"></a>
       <a href="https://www.facebook.com/sachintha.keshan.24/"><img src="assets/icons/facebook-green.png" title="Facebook" alt="Facebook"></a>
-      <a href="https://www.instagram.com/"><img src="assets/icons/instergram-green.png" title="instergram" alt="Intergram"></a>
-      <a href="mailto:sachinthakeshan175@gmail.com"><img src="assets/icons/mail-green.png" title="mail" alt="Mail"></a>
+      <a href="https://www.instagram.com/"><img src="assets/icons/instergram-green.png" title="Instagram" alt="Instagram"></a>
+      <a href="mailto:sachinthakeshan175@gmail.com"><img src="assets/icons/mail-green.png" title="Mail" alt="Mail"></a>
     </section>
 
     <div class="author">
       <p>Copyright &copy; 2024. Developed by Keshan Silva</p>
     </div>
-
   </footer>
 
 </main>
-
 
 
 
@@ -735,7 +783,30 @@
 <!--Scroll animation-project page-->
 <script src="assets/js/card-scroll.js"></script>
 
+<!-- JavaScript for handling form submission -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
+    // Retrieve the form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("msg").value;
+
+    // Compose the email body
+    const emailBody = `Hello Keshan,%0D%0A%0D%0AYou have received a new message from your portfolio contact form.%0D%0A%0D%0A` +
+            `Name: ${name}%0D%0A` +
+            `Email: ${email}%0D%0A%0D%0A` +
+            `Message:%0D%0A${message}%0D%0A`;
+
+    // Open the user's email client with the pre-filled email
+    const mailtoLink = `mailto:sachinthakeshan175@gmail.com?subject=New%20Message%20from%20${name}&body=${emailBody}`;
+    window.location.href = mailtoLink;
+
+    // Clear the form fields after sending the email
+    document.getElementById("contactForm").reset();
+  });
+</script>
 </body>
 
 </html>
