@@ -1,4 +1,4 @@
-const dotCount = 5000; // Number of dots
+const dotCount = 500; // Number of dots
 const container = document.getElementById('dotContainer');
 
 // Dynamically create dot wrappers and dots
