@@ -1,3 +1,4 @@
+/*
 const dotCount = 500; // Number of dots
 const container = document.getElementById('dotContainer');
 
@@ -19,3 +20,4 @@ for (let i = 1; i <= dotCount; i++) {
     dotWrapper.appendChild(dot);
     container.appendChild(dotWrapper);
 }
+*/
